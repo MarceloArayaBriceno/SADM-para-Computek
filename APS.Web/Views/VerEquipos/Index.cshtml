@@ -1,0 +1,50 @@
+﻿@model IEnumerable<APS.Data.Models.Equipo>
+
+@{
+    ViewData["Title"] = "Listado de Equipos";
+}
+
+<h2>Listado de Equipos</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Nombre Cliente</th>
+            <th>Motivo Ingreso</th>
+            <th>Fecha Ingreso</th>
+            <th>Garantía Con Local</th>
+            <th>Contraseña Equipo</th>
+            <th>Descripción</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var equipo in Model)
+        {
+            <tr>
+                <td>@equipo.EquipoId</td>
+                <td>@equipo.Marca</td>
+                <td>@equipo.Modelo</td>
+                <td>@equipo.NombreCliente</td>
+                <td>@equipo.MotivoIngreso</td>
+                <td>@equipo.FechaIngreso?.ToString("dd/MM/yyyy")</td>
+                <td>@equipo.GarantiaConLocal ? "Sí" : "No"</td>
+                <td>@equipo.ContraseñaEquipo</td>
+                <td>@equipo.Descripcion</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@equipo.EquipoId" class="btn btn-primary">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@equipo.EquipoId" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="text-right mt-3">
+    <a asp-area="" asp-controller="Equipos" asp-action="DescargarReportePdf" class="btn btn-success">
+        <i class="fas fa-file-pdf"></i> Descargar Reporte en PDF
+    </a>
+</div>

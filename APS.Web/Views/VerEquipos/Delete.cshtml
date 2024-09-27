@@ -1,0 +1,38 @@
+﻿@model APS.Data.Models.Equipo
+
+@{
+    ViewData["Title"] = "Eliminar Equipo";
+}
+
+<h2>Eliminar Equipo</h2>
+
+<h3>¿Estás seguro de que deseas eliminar este equipo?</h3>
+<div>
+    <h4>@Model.Marca @Model.Modelo</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NombreCliente)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NombreCliente)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.MotivoIngreso)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.MotivoIngreso)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FechaIngreso)
+        </dt>
+        <!-- Mostrar más detalles si es necesario -->
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="EquipoId" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+
+</div>

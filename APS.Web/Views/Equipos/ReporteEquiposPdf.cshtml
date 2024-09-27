@@ -1,0 +1,26 @@
+﻿@model IEnumerable<APS.Data.Models.Equipo>
+
+<h2>Reporte de Equipos Registrados</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Nombre del Cliente</th>
+            <th>Motivo de Ingreso</th>
+            <th>Fecha de Ingreso</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var equipo in Model)
+        {
+            <tr>
+                <td>@equipo.Marca</td>
+                <td>@equipo.Modelo</td>
+                <td>@equipo.NombreCliente</td>
+                <td>@equipo.MotivoIngreso</td>
+                <td>@equipo.FechaIngreso?.ToString("dd/MM/yyyy")</td>
+            </tr>
+        }
+    </tbody>
+</table>

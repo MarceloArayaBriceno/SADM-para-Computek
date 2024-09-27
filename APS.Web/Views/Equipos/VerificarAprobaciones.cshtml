@@ -1,0 +1,39 @@
+﻿@model AprobacionesViewModel
+
+<div class="container mt-4">
+    <h2 class="mb-4">Verificar Criterios de Aprobación</h2>
+
+    <form asp-action="VerificarAprobaciones" method="post">
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" asp-for="EstadoFisico" />
+                <label class="form-check-label" for="EstadoFisico">El equipo no presenta daños visibles graves.</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" asp-for="MarcaAprobada" />
+                <label class="form-check-label" for="MarcaAprobada">La marca del equipo está en la lista de marcas aprobadas.</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" asp-for="SinHumedadCalor" />
+                <label class="form-check-label" for="SinHumedadCalor">El equipo no presenta rastros de humedad o exposición a calor excesivo.</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" asp-for="ProcesadorCompatible" />
+                <label class="form-check-label" for="ProcesadorCompatible">El procesador es de una generación compatible.</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" asp-for="NoObsoleto" />
+                <label class="form-check-label" for="NoObsoleto">El equipo no ha sido declarado obsoleto por el fabricante.</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Validar Aprobaciones</button>
+    </form>
+</div>

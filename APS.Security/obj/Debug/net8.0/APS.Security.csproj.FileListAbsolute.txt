@@ -1,0 +1,62 @@
+C:\Users\User\source\repos\APS\APS.Security\bin\Debug\net8.0\APS.Security.deps.json
+C:\Users\User\source\repos\APS\APS.Security\bin\Debug\net8.0\APS.Security.dll
+C:\Users\User\source\repos\APS\APS.Security\bin\Debug\net8.0\APS.Security.pdb
+C:\Users\User\source\repos\APS\APS.Security\bin\Debug\net8.0\APS.Data.dll
+C:\Users\User\source\repos\APS\APS.Security\bin\Debug\net8.0\APS.Data.pdb
+C:\Users\User\source\repos\APS\APS.Security\obj\Debug\net8.0\APS.Security.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\APS\APS.Security\obj\Debug\net8.0\APS.Security.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\APS\APS.Security\obj\Debug\net8.0\APS.Security.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\APS\APS.Security\obj\Debug\net8.0\APS.Security.AssemblyInfo.cs
+C:\Users\User\source\repos\APS\APS.Security\obj\Debug\net8.0\APS.Security.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\APS\APS.Security\obj\Debug\net8.0\APS.Secu.628B4156.Up2Date
+C:\Users\User\source\repos\APS\APS.Security\obj\Debug\net8.0\APS.Security.dll
+C:\Users\User\source\repos\APS\APS.Security\obj\Debug\net8.0\refint\APS.Security.dll
+C:\Users\User\source\repos\APS\APS.Security\obj\Debug\net8.0\APS.Security.pdb
+C:\Users\User\source\repos\APS\APS.Security\obj\Debug\net8.0\ref\APS.Security.dll
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\bin\Debug\net8.0\APS.Security.deps.json
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\bin\Debug\net8.0\APS.Security.dll
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\bin\Debug\net8.0\APS.Security.pdb
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\bin\Debug\net8.0\APS.Data.dll
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\bin\Debug\net8.0\APS.Data.pdb
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\obj\Debug\net8.0\APS.Security.csproj.AssemblyReference.cache
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\obj\Debug\net8.0\APS.Security.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\obj\Debug\net8.0\APS.Security.AssemblyInfoInputs.cache
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\obj\Debug\net8.0\APS.Security.AssemblyInfo.cs
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\obj\Debug\net8.0\APS.Security.csproj.CoreCompileInputs.cache
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\obj\Debug\net8.0\APS.Secu.628B4156.Up2Date
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\obj\Debug\net8.0\APS.Security.dll
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\obj\Debug\net8.0\refint\APS.Security.dll
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\obj\Debug\net8.0\APS.Security.pdb
+C:\Users\XPC\Desktop\Tarea 4 y 5\APS\APS.Security\obj\Debug\net8.0\ref\APS.Security.dll
+D:\github\PALN_SC-601-Grupo-4\APS.Security\bin\Debug\net8.0\APS.Security.deps.json
+D:\github\PALN_SC-601-Grupo-4\APS.Security\bin\Debug\net8.0\APS.Security.dll
+D:\github\PALN_SC-601-Grupo-4\APS.Security\bin\Debug\net8.0\APS.Security.pdb
+D:\github\PALN_SC-601-Grupo-4\APS.Security\bin\Debug\net8.0\APS.Data.dll
+D:\github\PALN_SC-601-Grupo-4\APS.Security\bin\Debug\net8.0\APS.Data.pdb
+D:\github\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.csproj.AssemblyReference.cache
+D:\github\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.AssemblyInfoInputs.cache
+D:\github\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.AssemblyInfo.cs
+D:\github\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.csproj.CoreCompileInputs.cache
+D:\github\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.sourcelink.json
+D:\github\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Secu.628B4156.Up2Date
+D:\github\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.dll
+D:\github\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\refint\APS.Security.dll
+D:\github\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.pdb
+D:\github\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\ref\APS.Security.dll
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\bin\Debug\net8.0\APS.Security.deps.json
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\bin\Debug\net8.0\APS.Security.dll
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\bin\Debug\net8.0\APS.Security.pdb
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\bin\Debug\net8.0\APS.Data.dll
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\bin\Debug\net8.0\APS.Data.pdb
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.csproj.AssemblyReference.cache
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.AssemblyInfoInputs.cache
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.AssemblyInfo.cs
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.csproj.CoreCompileInputs.cache
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.sourcelink.json
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Secu.628B4156.Up2Date
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.dll
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\refint\APS.Security.dll
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\APS.Security.pdb
+C:\Users\noerr\source\repos\PALN_SC-601-Grupo-4\APS.Security\obj\Debug\net8.0\ref\APS.Security.dll

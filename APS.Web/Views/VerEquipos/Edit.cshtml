@@ -1,0 +1,56 @@
+﻿@model APS.Data.Models.Equipo
+
+@{
+    ViewData["Title"] = "Editar Equipo";
+}
+
+<h2>Editar Equipo</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="EquipoId" />
+    <div class="form-group">
+        <label asp-for="Marca" class="control-label"></label>
+        <input asp-for="Marca" class="form-control" />
+        <span asp-validation-for="Marca" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Modelo" class="control-label"></label>
+        <input asp-for="Modelo" class="form-control" />
+        <span asp-validation-for="Modelo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NombreCliente" class="control-label"></label>
+        <input asp-for="NombreCliente" class="form-control" />
+        <span asp-validation-for="NombreCliente" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MotivoIngreso" class="control-label"></label>
+        <input asp-for="MotivoIngreso" class="form-control" />
+        <span asp-validation-for="MotivoIngreso" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="GarantiaConLocal" class="control-label"></label>
+        <input asp-for="GarantiaConLocal" class="form-control" />
+        <span asp-validation-for="GarantiaConLocal" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ContraseñaEquipo" class="control-label"></label>
+        <input asp-for="ContraseñaEquipo" class="form-control" />
+        <span asp-validation-for="ContraseñaEquipo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Descripcion" class="control-label"></label>
+        <input asp-for="Descripcion" class="form-control" />
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FechaIngreso" class="control-label"></label>
+        <input asp-for="FechaIngreso" class="form-control" />
+        <span asp-validation-for="FechaIngreso" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Guardar" class="btn btn-primary" />
+    </div>
+</form>
+
+<a asp-action="Index">Volver al listado</a>
