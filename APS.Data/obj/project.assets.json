@@ -4246,11 +4246,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\PALN_SC-601-Grupo-4\\APS.Data\\APS.Data.csproj",
+      "projectUniqueName": "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
       "projectName": "APS.Data",
-      "projectPath": "D:\\github\\PALN_SC-601-Grupo-4\\APS.Data\\APS.Data.csproj",
+      "projectPath": "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
       "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\PALN_SC-601-Grupo-4\\APS.Data\\obj\\",
+      "outputPath": "D:\\github\\SADM-para-Computek\\APS.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",

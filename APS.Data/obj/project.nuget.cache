@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w/4TNQ35qrs=",
+  "dgSpecHash": "u5SooOAtbrA=",
   "success": true,
-  "projectFilePath": "D:\\github\\PALN_SC-601-Grupo-4\\APS.Data\\APS.Data.csproj",
+  "projectFilePath": "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\XPC\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\XPC\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

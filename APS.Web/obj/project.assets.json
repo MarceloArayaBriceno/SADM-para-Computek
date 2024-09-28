@@ -8098,11 +8098,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\PALN_SC-601-Grupo-4\\APS.Web\\APS.Web.csproj",
+      "projectUniqueName": "D:\\github\\SADM-para-Computek\\APS.Web\\APS.Web.csproj",
       "projectName": "APS.Web",
-      "projectPath": "D:\\github\\PALN_SC-601-Grupo-4\\APS.Web\\APS.Web.csproj",
+      "projectPath": "D:\\github\\SADM-para-Computek\\APS.Web\\APS.Web.csproj",
       "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\PALN_SC-601-Grupo-4\\APS.Web\\obj\\",
+      "outputPath": "D:\\github\\SADM-para-Computek\\APS.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8120,11 +8120,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\github\\PALN_SC-601-Grupo-4\\APS.Data\\APS.Data.csproj": {
-              "projectPath": "D:\\github\\PALN_SC-601-Grupo-4\\APS.Data\\APS.Data.csproj"
+            "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
+              "projectPath": "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj"
             },
-            "D:\\github\\PALN_SC-601-Grupo-4\\APS.Security\\APS.Security.csproj": {
-              "projectPath": "D:\\github\\PALN_SC-601-Grupo-4\\APS.Security\\APS.Security.csproj"
+            "D:\\github\\SADM-para-Computek\\APS.Security\\APS.Security.csproj": {
+              "projectPath": "D:\\github\\SADM-para-Computek\\APS.Security\\APS.Security.csproj"
             }
           }
         }
