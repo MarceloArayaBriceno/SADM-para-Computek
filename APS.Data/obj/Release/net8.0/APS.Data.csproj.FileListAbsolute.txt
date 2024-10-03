@@ -1,0 +1,15 @@
+D:\github\SADM-para-Computek\APS.Data\bin\Release\net8.0\APS.Data.deps.json
+D:\github\SADM-para-Computek\APS.Data\bin\Release\net8.0\APS.Data.runtimeconfig.json
+D:\github\SADM-para-Computek\APS.Data\bin\Release\net8.0\APS.Data.dll
+D:\github\SADM-para-Computek\APS.Data\bin\Release\net8.0\APS.Data.pdb
+D:\github\SADM-para-Computek\APS.Data\obj\Release\net8.0\APS.Data.csproj.AssemblyReference.cache
+D:\github\SADM-para-Computek\APS.Data\obj\Release\net8.0\APS.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\github\SADM-para-Computek\APS.Data\obj\Release\net8.0\APS.Data.AssemblyInfoInputs.cache
+D:\github\SADM-para-Computek\APS.Data\obj\Release\net8.0\APS.Data.AssemblyInfo.cs
+D:\github\SADM-para-Computek\APS.Data\obj\Release\net8.0\APS.Data.csproj.CoreCompileInputs.cache
+D:\github\SADM-para-Computek\APS.Data\obj\Release\net8.0\APS.Data.sourcelink.json
+D:\github\SADM-para-Computek\APS.Data\obj\Release\net8.0\APS.Data.dll
+D:\github\SADM-para-Computek\APS.Data\obj\Release\net8.0\refint\APS.Data.dll
+D:\github\SADM-para-Computek\APS.Data\obj\Release\net8.0\APS.Data.pdb
+D:\github\SADM-para-Computek\APS.Data\obj\Release\net8.0\APS.Data.genruntimeconfig.cache
+D:\github\SADM-para-Computek\APS.Data\obj\Release\net8.0\ref\APS.Data.dll
