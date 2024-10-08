@@ -14,6 +14,4 @@ public partial class Account
     public decimal? Balance { get; set; }
 
     public DateTime? CreatedAt { get; set; }
-
-    public virtual User? User { get; set; }
 }

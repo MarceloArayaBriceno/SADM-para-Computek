@@ -1,105 +1,55 @@
-﻿
-using APS.Security;
+﻿using APS.Security;
 using APS.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 
-/*
-namespace APS.Web.Controllers
-{
-    public class LoginController(ISecurityService service) : Controller
-    {
-        private readonly ISecurityService _service = service;
-
-        public IActionResult Index()
-        {
-            return View("/Views/Accounts/Login.cshtml");
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login(LoginModel model)
-        {
-            bool result = false;
-            if (ModelState.IsValid)
-                result = await _service.AuthUserByEmailAsync(new Data.Models.User { Email = model.Email, Password = model.Password });
-
-            if (result)
-                return RedirectToAction("Index", "Home");
-            
-            throw new Exception("Error");
-        }
-    }
-}
-
-*/
 namespace APS.Web.Controllers
 {
     public class LoginController : Controller
     {
         private readonly ISecurityService _service;
 
-        // Constructor que inyecta el servicio de seguridad
         public LoginController(ISecurityService service)
         {
-            _service = service;  // Inicializa el campo del servicio con la dependencia inyectada
+            _service = service;
         }
 
-        // Método para mostrar la vista de login
         public IActionResult Index()
         {
             return View("/Views/Accounts/Login.cshtml");
         }
 
-        // Método para manejar el intento de login
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginModel model)
         {
             if (ModelState.IsValid)
             {
-                // Imprime un mensaje en la consola para depurar
                 Console.WriteLine("ModelState es válido. Intentando autenticar...");
 
-                // Intenta autenticar al usuario
-                bool isAuthenticated = await _service.AuthUserByEmailAsync(new Data.Models.User { Email = model.Email, Password = model.Password });
+                var user = await _service.AuthUserByEmailAsync(new Data.Models.User { Email = model.Email, Password = model.Password });
 
-                if (isAuthenticated)
+                if (user != null && user.Role == 1) // Verifica que el usuario sea admin (Role = 1)
                 {
-                    Console.WriteLine($"Usuario {model.Email} autenticado correctamente.");
+                    Console.WriteLine($"Usuario {model.Email} autenticado correctamente como admin.");
 
-                    // Almacena la información del usuario en la sesión
                     HttpContext.Session.SetString("UserEmail", model.Email);
+                    HttpContext.Session.SetInt32("UserRole", user.Role);
 
-                    // Redirige al usuario al Home/Index si la autenticación es exitosa
                     return RedirectToAction("Index", "Home");
                 }
                 else
                 {
-                    // Si la autenticación falla, añade un error al ModelState para informar al usuario
-                    ModelState.AddModelError("", "Intento de inicio de sesión no válido.");
-                    Console.WriteLine($"No se pudo autenticar al usuario con el email: {model.Email}. Verifica las credenciales.");
+                    ModelState.AddModelError("", "Intento de inicio de sesión no válido o sin permisos de administrador.");
+                    Console.WriteLine($"No se pudo autenticar al usuario con el email: {model.Email} o no tiene permisos de admin.");
                 }
             }
-            else
-            {
-                // Imprime un mensaje en la consola para depurar
-                Console.WriteLine("ModelState no es válido. Errores:");
 
-                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
-                {
-                    Console.WriteLine(error.ErrorMessage);
-                }
-
-            }
-
-            // Devuelve la misma vista de login con el modelo actual y cualquier error de ModelState
             return View("/Views/Accounts/Login.cshtml", model);
         }
 
-        // Método para cerrar sesión
         public IActionResult Logout()
         {
-            HttpContext.Session.Clear(); // Limpia la sesión
+            HttpContext.Session.Clear();
             return RedirectToAction("Index", "Login");
         }
     }

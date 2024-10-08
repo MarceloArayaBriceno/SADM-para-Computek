@@ -3,6 +3,7 @@ using APS.Data.Models;
 using APS.Security;
 using APS.Web.Architecture;
 using APS.Web.Filters;
+using APS.Web.Utilities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Rotativa.AspNetCore;
@@ -39,7 +40,7 @@ builder.Services.AddDistributedMemoryCache();
 // Configurar y añadir el servicio de sesión
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(1); // Tiempo de expiración de la sesión
+    options.IdleTimeout = TimeSpan.FromMinutes(1); // Cambia el tiempo de expiración de la sesión si es necesario
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
@@ -54,7 +55,11 @@ ServicesConfiguration.Register(builder.Services);
 // Construye la aplicación
 var app = builder.Build();
 
+// Descargar wkhtmltopdf.exe si no existe
+await WkhtmltopdfDownloader.DownloadWkhtmltopdfAsync(); 
+
 // Configura Rotativa
+// Asegúrate de que el archivo wkhtmltopdf.exe está en wwwroot/Rotativa/
 RotativaConfiguration.Setup(app.Environment.WebRootPath, "Rotativa");
 
 // Configura el pipeline de la aplicación

@@ -10,6 +10,4 @@ public partial class Authorization
     public int UserId { get; set; }
 
     public string Pages { get; set; } = null!;
-
-    public virtual User User { get; set; } = null!;
 }

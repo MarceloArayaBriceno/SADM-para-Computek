@@ -95,21 +95,25 @@ namespace APS.Web.Controllers
         {
             return View();
         }
-     
-        
+
+
         // Acción para generar el PDF del reporte de equipos
-    public IActionResult DescargarReportePdf()
+        public IActionResult DescargarReportePdf()
         {
+            // Obtener los equipos de la base de datos
             var equipos = _context.Equipos.ToList();
 
-            // Utiliza la vista existente o crea una nueva específica para el PDF
-            return new ViewAsPdf("ReporteEquiposPdf", equipos)
+            // Usar la vista "ReporteEquiposPdf" para generar el PDF
+            var pdf = new ViewAsPdf("ReporteEquiposPdf", equipos)
             {
-                FileName = "ReporteEquipos.pdf",
-                PageSize = Rotativa.AspNetCore.Options.Size.A4,
-                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
-                PageMargins = new Rotativa.AspNetCore.Options.Margins(10, 10, 10, 10)
+                FileName = "ListadoEquipos.pdf",
+                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Landscape, // Opcional: orientación
+                PageSize = Rotativa.AspNetCore.Options.Size.A4 // Opcional: tamaño de página
             };
+
+            return pdf;
         }
+
+
     }
 }
