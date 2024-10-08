@@ -67,16 +67,13 @@ CREATE TABLE [dbo].[user](
     [username] VARCHAR(50) NOT NULL,
     [password] VARCHAR(255) NOT NULL,
     [email] VARCHAR(100) NOT NULL,
-    [created_at] DATETIME NULL DEFAULT (GETDATE()),
-    [description] NCHAR(10) NULL,
-    [isAuthorized] BIT NULL,
-    PRIMARY KEY CLUSTERED ([user_id] ASC)
+	[role] int not null
 ) ON [PRIMARY];
 GO
 
 SELECT * FROM [dbo].[user];
 GO
-
+DROP TABLE IF EXISTS [dbo].[user];
 
 DROP TABLE IF EXISTS [dbo].[equipos];
 
@@ -134,11 +131,10 @@ GO
 
 -- Insertar datos de ejemplo en la tabla "user"
 SET IDENTITY_INSERT [dbo].[user] ON;
-INSERT INTO [dbo].[user] ([user_id], [username], [password], [email], [created_at], [description], [isAuthorized]) VALUES 
-(1, N'marcelo', N'123', N'marcelo@gmail.com', GETDATE(), NULL, NULL),
-(2, N'joshua', N'123', N'joshua@gmail.com', GETDATE(), NULL, NULL),
-(3, N'noe', N'123', N'noe@gmail.com', GETDATE(), NULL, NULL),
-(4, N'denis', N'123', N'denis@gmail.com', GETDATE(), NULL, NULL);
+INSERT INTO [dbo].[user] ([user_id], [username], [password], [email], [role]) VALUES 
+(1,N'Marcelo', N'123', N'marcelo@gmail.com',1),
+(2,N'Melanie',N'123',N'melanie@gmail.com',2),
+(3,N'Weyner',N'123',N'weyner@gmail.com',2);
 SET IDENTITY_INSERT [dbo].[user] OFF;
 GO
 
