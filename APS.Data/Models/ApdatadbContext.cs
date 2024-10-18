@@ -23,11 +23,11 @@ public partial class ApdatadbContext : DbContext
 
     public virtual DbSet<Equipo> Equipos { get; set; }
 
-    public virtual DbSet<HistorialEquipo> HistorialEquipos { get; set; }
-
     public virtual DbSet<Notification> Notifications { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
+
+    public virtual DbSet<HistorialEquipo> HistorialEquipos { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -37,7 +37,7 @@ public partial class ApdatadbContext : DbContext
     {
         modelBuilder.Entity<Account>(entity =>
         {
-            entity.HasKey(e => e.AccountId).HasName("PK__account__46A222CD35D28E32");
+            entity.HasKey(e => e.AccountId).HasName("PK__account__46A222CDB9FFDFD3");
 
             entity.ToTable("account");
 
@@ -55,38 +55,55 @@ public partial class ApdatadbContext : DbContext
                 .HasColumnType("datetime")
                 .HasColumnName("created_at");
             entity.Property(e => e.UserId).HasColumnName("user_id");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Accounts)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK_account_user_id");
         });
 
         modelBuilder.Entity<Aprobacione>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("aprobaciones");
+            entity.HasKey(e => e.AprobacionId).HasName("PK__aprobaci__841444415F806074");
 
+            entity.ToTable("aprobaciones");
+
+            entity.Property(e => e.AprobacionId).HasColumnName("aprobacion_id");
             entity.Property(e => e.Criterio)
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("criterio");
             entity.Property(e => e.Cumple).HasColumnName("cumple");
+            entity.Property(e => e.EquipoId).HasColumnName("equipo_id");
+
+            entity.HasOne(d => d.Equipo).WithMany(p => p.Aprobaciones)
+                .HasForeignKey(d => d.EquipoId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__aprobacio__equip__6D0D32F4");
         });
 
         modelBuilder.Entity<Authorization>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__authoriz__3213E83F9E773328");
+            entity.HasKey(e => e.Id).HasName("PK__authoriz__3213E83F41813066");
 
             entity.ToTable("authorizations");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.Pages).HasColumnName("pages");
             entity.Property(e => e.UserId).HasColumnName("userId");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Authorizations)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_authorizations_userId");
         });
 
         modelBuilder.Entity<Equipo>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("equipos");
+            entity.HasKey(e => e.EquipoId).HasName("PK__equipos__50EAD2BF9783599C");
 
+            entity.ToTable("equipos");
+
+            entity.Property(e => e.EquipoId).HasColumnName("equipo_id");
             entity.Property(e => e.ContraseñaEquipo)
                 .HasMaxLength(100)
                 .IsUnicode(false)
@@ -94,9 +111,6 @@ public partial class ApdatadbContext : DbContext
             entity.Property(e => e.Descripcion)
                 .HasColumnType("text")
                 .HasColumnName("descripcion");
-            entity.Property(e => e.EquipoId)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("equipo_id");
             entity.Property(e => e.FechaIngreso)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
@@ -118,21 +132,18 @@ public partial class ApdatadbContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("nombre_cliente");
             entity.Property(e => e.UsuarioId).HasColumnName("usuario_id");
-        });
 
-        modelBuilder.Entity<HistorialEquipo>(entity =>
-        {
-            entity.HasNoKey();
+            entity.HasKey(e => e.EquipoId);
 
-            entity.Property(e => e.FechaCambio)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime");
-            entity.Property(e => e.HistorialId).ValueGeneratedOnAdd();
+            entity.HasMany(e => e.HistorialEquipos)
+                  .WithOne(h => h.Equipo)
+                  .HasForeignKey(h => h.EquipoId)
+                  .OnDelete(DeleteBehavior.ClientSetNull);
         });
 
         modelBuilder.Entity<Notification>(entity =>
         {
-            entity.HasKey(e => e.NotificationId).HasName("PK__notifica__E059842FA8DDB4C5");
+            entity.HasKey(e => e.NotificationId).HasName("PK__notifica__E059842FAF406580");
 
             entity.ToTable("notifications");
 
@@ -148,30 +159,61 @@ public partial class ApdatadbContext : DbContext
                 .HasColumnType("text")
                 .HasColumnName("message");
             entity.Property(e => e.UserId).HasColumnName("user_id");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Notifications)
+                .HasForeignKey(d => d.UserId)
+                .HasConstraintName("FK_notifications_user_id");
         });
 
         modelBuilder.Entity<User>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("user");
+            entity.HasKey(e => e.UserId).HasName("PK__user__B9BE370F4435B8CB");
 
+            entity.ToTable("user");
+
+            entity.HasIndex(e => e.Email, "UQ_user_email").IsUnique();
+
+            entity.HasIndex(e => e.Username, "UQ_user_username").IsUnique();
+
+            entity.Property(e => e.UserId).HasColumnName("user_id");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime")
+                .HasColumnName("created_at");
+            entity.Property(e => e.Description)
+                .HasMaxLength(10)
+                .IsFixedLength()
+                .HasColumnName("description");
             entity.Property(e => e.Email)
                 .HasMaxLength(100)
                 .IsUnicode(false)
                 .HasColumnName("email");
+            entity.Property(e => e.IsAuthorized).HasColumnName("isAuthorized");
             entity.Property(e => e.Password)
                 .HasMaxLength(255)
                 .IsUnicode(false)
                 .HasColumnName("password");
-            entity.Property(e => e.Role).HasColumnName("role");
-            entity.Property(e => e.UserId)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("user_id");
             entity.Property(e => e.Username)
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("username");
+        });
+
+        modelBuilder.Entity<HistorialEquipo>(entity =>
+        {
+            entity.HasKey(e => e.HistorialId);
+
+            entity.Property(e => e.DescripcionCambio)
+                  .IsRequired()
+                  .HasMaxLength(int.MaxValue);
+
+            entity.Property(e => e.FechaCambio)
+                  .HasDefaultValueSql("GETDATE()");
+
+            entity.HasOne(d => d.Equipo)
+                  .WithMany(p => p.HistorialEquipos)
+                  .HasForeignKey(d => d.EquipoId)
+                  .OnDelete(DeleteBehavior.ClientSetNull);
         });
 
         OnModelCreatingPartial(modelBuilder);

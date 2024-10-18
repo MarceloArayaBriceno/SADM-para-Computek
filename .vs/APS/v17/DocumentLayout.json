@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\github\\SADM-para-Computek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\verequipos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\verequipos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\gestionequipos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\gestionequipos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,14 +35,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "APS.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "APS.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAuwDMAAAAAAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\VerEquipos\\Index.cshtml",
+              "RelativeDocumentMoniker": "APS.Web\\Views\\VerEquipos\\Index.cshtml",
+              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\VerEquipos\\Index.cshtml",
+              "RelativeToolTip": "APS.Web\\Views\\VerEquipos\\Index.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAuwCsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-04T03:14:49.289Z",
+              "WhenOpened": "2024-10-18T03:16:34.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\GestionEquipos\\Index.cshtml",
+              "RelativeDocumentMoniker": "APS.Web\\Views\\GestionEquipos\\Index.cshtml",
+              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\GestionEquipos\\Index.cshtml",
+              "RelativeToolTip": "APS.Web\\Views\\GestionEquipos\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T03:16:32.987Z",
               "EditorCaption": ""
             }
           ]
