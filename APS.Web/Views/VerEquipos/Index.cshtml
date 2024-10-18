@@ -30,6 +30,7 @@
                 <td>@equipo.Modelo</td>
                 <td>@equipo.NombreCliente</td>
                 <td>@equipo.MotivoIngreso</td>
+                <td>@equipo.FechaIngreso?.ToString("dd/MM/yyyy")</td>
                 <td>@equipo.GarantiaConLocal ? "Sí" : "No"</td>
                 <td>@equipo.ContraseñaEquipo</td>
                 <td>@equipo.Descripcion</td>
@@ -41,8 +42,3 @@
         }
     </tbody>
 </table>
-
-
-<a asp-area="" asp-controller="Equipos" asp-action="DescargarReportePdf" class="btn btn-success">
-    <i class="fas fa-file-pdf"></i> Descargar Reporte en PDF
-</a>

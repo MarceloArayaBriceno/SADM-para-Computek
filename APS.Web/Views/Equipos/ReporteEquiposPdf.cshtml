@@ -1,42 +1,26 @@
 ﻿@model IEnumerable<APS.Data.Models.Equipo>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Reporte de Equipos</title>
-</head>
-<body>
-    <h2>Listado de Equipos</h2>
-
-    <table>
-        <thead>
+<h2>Reporte de Equipos Registrados</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Nombre del Cliente</th>
+            <th>Motivo de Ingreso</th>
+            <th>Fecha de Ingreso</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var equipo in Model)
+        {
             <tr>
-                <th>ID</th>
-                <th>Marca</th>
-                <th>Modelo</th>
-                <th>Nombre Cliente</th>
-                <th>Motivo Ingreso</th>
-                <th>Fecha Ingreso</th>
-                <th>Garantía Con Local</th>
-                <th>Contraseña Equipo</th>
-                <th>Descripción</th>
+                <td>@equipo.Marca</td>
+                <td>@equipo.Modelo</td>
+                <td>@equipo.NombreCliente</td>
+                <td>@equipo.MotivoIngreso</td>
+                <td>@equipo.FechaIngreso?.ToString("dd/MM/yyyy")</td>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var equipo in Model)
-            {
-                <tr>
-                    <td>@equipo.EquipoId</td>
-                    <td>@equipo.Marca</td>
-                    <td>@equipo.Modelo</td>
-                    <td>@equipo.NombreCliente</td>
-                    <td>@equipo.MotivoIngreso</td>
-                    <td>@equipo.GarantiaConLocal ? "Sí" : "No"</td>
-                    <td>@equipo.ContraseñaEquipo</td>
-                    <td>@equipo.Descripcion</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</body>
-</html>
+        }
+    </tbody>
+</table>

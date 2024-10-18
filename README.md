@@ -1,1 +1,1 @@
-# G5_SC603_K_Arquitectura
+# PALN_SC-601-Grupo-4

@@ -1,2 +1,1 @@
 .vs/
-wwwroot/Rotativa/wkhtmltopdf.exe

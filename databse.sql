@@ -5,20 +5,20 @@
 USE [GestionEquiposDB];
 GO
 */
-
+/*
 USE master;
 GO
 ALTER DATABASE APDatadb SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 GO
 DROP DATABASE APDatadb;
 GO
-
+*/
 CREATE DATABASE APDatadb;
 GO
 
 USE APDatadb;
 GO
-
+/*
 DECLARE @sql NVARCHAR(MAX) = N'';
 
 -- Generar DROP para cada tabla
@@ -28,7 +28,7 @@ FROM sys.tables;
 -- Ejecutar los DROP TABLE
 EXEC sp_executesql @sql;
 
-
+*/
 
 -- Crear la tabla "account"
 CREATE TABLE [dbo].[account](
@@ -67,15 +67,18 @@ CREATE TABLE [dbo].[user](
     [username] VARCHAR(50) NOT NULL,
     [password] VARCHAR(255) NOT NULL,
     [email] VARCHAR(100) NOT NULL,
-	[role] int not null
+    [created_at] DATETIME NULL DEFAULT (GETDATE()),
+    [description] NCHAR(10) NULL,
+    [isAuthorized] BIT NULL,
+    PRIMARY KEY CLUSTERED ([user_id] ASC)
 ) ON [PRIMARY];
 GO
 
 SELECT * FROM [dbo].[user];
 GO
-DROP TABLE IF EXISTS [dbo].[user];
 
-DROP TABLE IF EXISTS [dbo].[equipos];
+/*
+DROP TABLE IF EXISTS [dbo].[equipos];*/
 
 CREATE TABLE [dbo].[equipos] (
     [equipo_id] INT IDENTITY(1,1) NOT NULL,
@@ -96,8 +99,8 @@ SELECT * FROM [dbo].[equipos];
 GO
 
 
-
-DROP TABLE IF EXISTS [dbo].[aprobaciones];
+/*
+DROP TABLE IF EXISTS [dbo].[aprobaciones];*/
 
 -- Crear la tabla "aprobaciones"
 CREATE TABLE [dbo].[aprobaciones](
@@ -131,12 +134,13 @@ GO
 
 -- Insertar datos de ejemplo en la tabla "user"
 SET IDENTITY_INSERT [dbo].[user] ON;
-INSERT INTO [dbo].[user] ([user_id], [username], [password], [email], [role]) VALUES 
-(1,N'Marcelo', N'123', N'marcelo@gmail.com',1),
-(2,N'Melanie',N'123',N'melanie@gmail.com',2),
-(3,N'Weyner',N'123',N'weyner@gmail.com',2);
+INSERT INTO [dbo].[user] ([user_id], [username], [password], [email], [created_at], [description], [isAuthorized]) VALUES 
+(1, N'Marcelo', N'123', N'marcelo@gmail.com', GETDATE(), NULL, NULL),
+(2, N'Melanie', N'123', N'melanie@gmail.com', GETDATE(), NULL, NULL),
+(3, N'Weyner', N'123', N'weyner@gmail.com', GETDATE(), NULL, NULL);
 SET IDENTITY_INSERT [dbo].[user] OFF;
 GO
+
 
 -- Insertar datos de ejemplo en la tabla "account"
 SET IDENTITY_INSERT [dbo].[account] ON;

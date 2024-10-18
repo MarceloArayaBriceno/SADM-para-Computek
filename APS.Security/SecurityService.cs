@@ -7,14 +7,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+/*
+namespace APS.Security;
+
+public interface ISecurityService
+{
+    Task<bool> AuthUserAsync(User user);
+    Task<bool> AuthUserByEmailAsync(User user);
+}
+
+public class SecurityService(ISecurityRepository securityRepository) : ISecurityService
+{
+    private readonly ISecurityRepository _securityRepository = securityRepository;
+
+    public async Task<bool> AuthUserAsync(User user)
+    {
+        return await _securityRepository.AuthenticateUserAsync(user);
+    }
+    public async Task<bool> AuthUserByEmailAsync(User user)
+    {
+        return await _securityRepository.AuthenticateUserAsync(user);
+    }
+}
+*/
+
 using System.Threading.Tasks;
 
 namespace APS.Security
 {
     public interface ISecurityService
     {
-        Task<User?> AuthUserAsync(User user);
-        Task<User?> AuthUserByEmailAsync(User user);
+        Task<bool> AuthUserAsync(User user);
+        Task<bool> AuthUserByEmailAsync(User user);
     }
 
     public class SecurityService : ISecurityService
@@ -26,18 +51,15 @@ namespace APS.Security
             _securityRepository = securityRepository;
         }
 
-        public async Task<User?> AuthUserAsync(User user)
+        public async Task<bool> AuthUserAsync(User user)
         {
-            // Aquí debes devolver el objeto `User`, no un `bool`
             var authenticatedUser = await _securityRepository.AuthenticateUserAsync(user.Email, user.Password);
-            return authenticatedUser; // Devuelve el objeto `User` autenticado o `null` si no existe
+            return authenticatedUser != null; // Devuelve true si el usuario está autenticado
         }
 
-        public async Task<User?> AuthUserByEmailAsync(User user)
+        public async Task<bool> AuthUserByEmailAsync(User user)
         {
-            // Usa el método `AuthUserAsync` y devuelve el usuario autenticado
-            return await AuthUserAsync(user);
+            return await AuthUserAsync(user); // Usa el mismo método de autenticación basado en email y contraseña
         }
     }
-
 }

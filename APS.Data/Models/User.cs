@@ -13,5 +13,17 @@ public partial class User
 
     public string Email { get; set; } = null!;
 
-    public int Role { get; set; }
+    public DateTime? CreatedAt { get; set; }
+
+    public string? Description { get; set; }
+
+    public bool? IsAuthorized { get; set; }
+
+    public virtual ICollection<Account> Accounts { get; set; } = new List<Account>();
+
+    public virtual ICollection<Authorization> Authorizations { get; set; } = new List<Authorization>();
+
+    public virtual ICollection<Equipo> Equipos { get; set; } = new List<Equipo>();
+
+    public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();
 }
