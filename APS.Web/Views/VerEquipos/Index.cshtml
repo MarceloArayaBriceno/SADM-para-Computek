@@ -14,8 +14,6 @@
             <th>Modelo</th>
             <th>Nombre Cliente</th>
             <th>Motivo Ingreso</th>
-            <th>Fecha Ingreso</th>
-            <th>Garantía Con Local</th>
             <th>Contraseña Equipo</th>
             <th>Descripción</th>
             <th>Acciones</th>
@@ -30,13 +28,15 @@
                 <td>@equipo.Modelo</td>
                 <td>@equipo.NombreCliente</td>
                 <td>@equipo.MotivoIngreso</td>
-                <td>@equipo.GarantiaConLocal ? "Sí" : "No"</td>
                 <td>@equipo.ContraseñaEquipo</td>
                 <td>@equipo.Descripcion</td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@equipo.EquipoId" class="btn btn-primary">Editar</a>
                     <a asp-action="Delete" asp-route-id="@equipo.EquipoId" class="btn btn-danger">Eliminar</a>
+                    <a asp-action="GenerarReporte" asp-controller="Equipos" asp-route-equipoId="@equipo.EquipoId" class="btn btn-success">Generar Reporte</a>
+
                 </td>
+
             </tr>
         }
     </tbody>

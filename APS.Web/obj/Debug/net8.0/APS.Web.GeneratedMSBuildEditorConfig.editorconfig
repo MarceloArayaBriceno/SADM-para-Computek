@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xFcXVpcG9SZWNoYXphZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/github/SADM-para-Computek/APS.Web/Views/Equipos/ReporteEquipoPdf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xSZXBvcnRlRXF1aXBvUGRmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/github/SADM-para-Computek/APS.Web/Views/Equipos/ReporteEquiposPdf.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xSZXBvcnRlRXF1aXBvc1BkZi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,10 +52,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/github/SADM-para-Computek/APS.Web/Views/GestionEquipos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkVxdWlwb3NcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/github/SADM-para-Computek/APS.Web/Views/GestionEquipos/ReporteHistorialPdf.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkVxdWlwb3NcUmVwb3J0ZUhpc3RvcmlhbFBkZi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/github/SADM-para-Computek/APS.Web/Views/Home/Index.cshtml]

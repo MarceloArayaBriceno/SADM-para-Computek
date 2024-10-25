@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\github\\SADM-para-Computek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E858E848-C962-4C74-BCF2-706D965AFDD1}|APS.Data\\APS.Data.csproj|d:\\github\\sadm-para-computek\\aps.data\\models\\apdatadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E858E848-C962-4C74-BCF2-706D965AFDD1}|APS.Data\\APS.Data.csproj|solutionrelative:aps.data\\models\\apdatadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\controllers\\equiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\verequipos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\verequipos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\equipos\\reporteequipopdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\equipos\\reporteequipopdf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,42 +42,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Program.cs",
-              "RelativeDocumentMoniker": "APS.Web\\Program.cs",
-              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Program.cs",
-              "RelativeToolTip": "APS.Web\\Program.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T02:09:47.055Z",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "APS.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "APS.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAACSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T03:44:24.964Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReporteEquipoPdf.cshtml",
+              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Equipos\\ReporteEquipoPdf.cshtml",
+              "RelativeDocumentMoniker": "APS.Web\\Views\\Equipos\\ReporteEquipoPdf.cshtml",
+              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Equipos\\ReporteEquipoPdf.cshtml",
+              "RelativeToolTip": "APS.Web\\Views\\Equipos\\ReporteEquipoPdf.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T03:35:07.01Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ApdatadbContext.cs",
-              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Data\\Models\\ApdatadbContext.cs",
-              "RelativeDocumentMoniker": "APS.Data\\Models\\ApdatadbContext.cs",
-              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Data\\Models\\ApdatadbContext.cs",
-              "RelativeToolTip": "APS.Data\\Models\\ApdatadbContext.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCsAAAAAAAAA",
+              "Title": "EquiposController.cs",
+              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Controllers\\EquiposController.cs",
+              "RelativeDocumentMoniker": "APS.Web\\Controllers\\EquiposController.cs",
+              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Controllers\\EquiposController.cs",
+              "RelativeToolTip": "APS.Web\\Controllers\\EquiposController.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAewHwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T01:59:35.913Z",
+              "WhenOpened": "2024-10-25T03:27:28.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\appsettings.json",
-              "RelativeDocumentMoniker": "APS.Web\\appsettings.json",
-              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\appsettings.json",
-              "RelativeToolTip": "APS.Web\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-25T00:08:40.078Z",
-              "EditorCaption": ""
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\VerEquipos\\Index.cshtml",
+              "RelativeDocumentMoniker": "APS.Web\\Views\\VerEquipos\\Index.cshtml",
+              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\VerEquipos\\Index.cshtml",
+              "RelativeToolTip": "APS.Web\\Views\\VerEquipos\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T03:17:29.743Z"
             }
           ]
         }
