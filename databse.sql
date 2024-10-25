@@ -1,33 +1,11 @@
-﻿/*
---************************************
-
--- Usar la nueva base de datos
-USE [GestionEquiposDB];
-GO
-*/
-/*
-USE master;
-GO
-ALTER DATABASE APDatadb SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-GO
-DROP DATABASE APDatadb;
-GO
-*/
-CREATE DATABASE APDatadb;
-GO
-
-USE APDatadb;
-GO
-/*
-DECLARE @sql NVARCHAR(MAX) = N'';
-
--- Generar DROP para cada tabla
-SELECT @sql += 'DROP TABLE [' + SCHEMA_NAME(schema_id) + '].[' + name + ']; '
-FROM sys.tables;
-
--- Ejecutar los DROP TABLE
-EXEC sp_executesql @sql;
-
+﻿/*DROP TABLE IF EXISTS [dbo].[aprobaciones];
+DROP TABLE IF EXISTS [dbo].[account];
+DROP TABLE IF EXISTS [dbo].[authorizations];
+DROP TABLE IF EXISTS [dbo].[notifications];
+DROP TABLE IF EXISTS [dbo].[equipos];
+DROP TABLE IF EXISTS [dbo].[HistorialEquipos];
+DROP TABLE IF EXISTS [dbo].[prueba];
+DROP TABLE IF EXISTS [dbo].[Usuarios];
 */
 
 -- Crear la tabla "account"
@@ -77,9 +55,6 @@ GO
 SELECT * FROM [dbo].[user];
 GO
 
-/*
-DROP TABLE IF EXISTS [dbo].[equipos];*/
-
 CREATE TABLE [dbo].[equipos] (
     [equipo_id] INT IDENTITY(1,1) NOT NULL,
     [marca] VARCHAR(100) NOT NULL,
@@ -97,10 +72,6 @@ GO
 
 SELECT * FROM [dbo].[equipos];
 GO
-
-
-/*
-DROP TABLE IF EXISTS [dbo].[aprobaciones];*/
 
 -- Crear la tabla "aprobaciones"
 CREATE TABLE [dbo].[aprobaciones](
@@ -186,9 +157,26 @@ INSERT INTO [dbo].[aprobaciones] ([criterio], [cumple]) VALUES
 ('El equipo no ha sido declarado obsoleto por el fabricante.', 0);
 GO
 
+ALTER TABLE [dbo].[aprobaciones]
+ADD [AprobacionId] INT IDENTITY(1,1) PRIMARY KEY;
+
+ALTER TABLE [dbo].[HistorialEquipos]
+ADD CONSTRAINT PK_HistorialEquipos PRIMARY KEY ([HistorialId]);
+
+ALTER TABLE [dbo].[equipos]
+ADD CONSTRAINT PK_Equipos PRIMARY KEY ([equipo_id]);
+
+
 CREATE TABLE [dbo].[HistorialEquipos] (
     [HistorialId] INT IDENTITY(1,1) NOT NULL,
     [EquipoId] INT NOT NULL,
     [DescripcionCambio] NVARCHAR(MAX) NOT NULL,
     [FechaCambio] DATETIME NOT NULL DEFAULT GETDATE()
+);
+
+SELECT * FROM [dbo].[HistorialEquipos];
+GO
+
+CREATE TABLE [dbo].[PRUEBAS] (
+    [DATOS] INT IDENTITY(1,1) NOT NULL
 );

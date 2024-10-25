@@ -1,12 +1,15 @@
-﻿namespace APS.Data.Models
-{
-    public partial class HistorialEquipo
-    {
-        public int HistorialId { get; set; }
-        public int EquipoId { get; set; }
-        public string DescripcionCambio { get; set; }
-        public DateTime FechaCambio { get; set; }
+﻿using System;
+using System.Collections.Generic;
 
-        public virtual Equipo Equipo { get; set; }
-    }
+namespace APS.Data.Models;
+
+public partial class HistorialEquipo
+{
+    public int HistorialId { get; set; }
+
+    public int EquipoId { get; set; }
+
+    public string DescripcionCambio { get; set; } = null!;
+
+    public DateTime FechaCambio { get; set; }
 }

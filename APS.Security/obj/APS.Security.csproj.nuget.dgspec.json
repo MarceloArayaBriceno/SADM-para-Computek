@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wayne\\source\\repos\\SADM-para-Computek\\APS.Security\\APS.Security.csproj": {}
+    "D:\\github\\SADM-para-Computek\\APS.Security\\APS.Security.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wayne\\source\\repos\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
+    "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wayne\\source\\repos\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
+        "projectUniqueName": "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
         "projectName": "APS.Data",
-        "projectPath": "C:\\Users\\wayne\\source\\repos\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
-        "packagesPath": "C:\\Users\\wayne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wayne\\source\\repos\\SADM-para-Computek\\APS.Data\\obj\\",
+        "projectPath": "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
+        "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\SADM-para-Computek\\APS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\wayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -53,11 +54,11 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[8.0.10, )"
             }
           },
           "imports": [
@@ -76,21 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\wayne\\source\\repos\\SADM-para-Computek\\APS.Security\\APS.Security.csproj": {
+    "D:\\github\\SADM-para-Computek\\APS.Security\\APS.Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wayne\\source\\repos\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
+        "projectUniqueName": "D:\\github\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
         "projectName": "APS.Security",
-        "projectPath": "C:\\Users\\wayne\\source\\repos\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
-        "packagesPath": "C:\\Users\\wayne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wayne\\source\\repos\\SADM-para-Computek\\APS.Security\\obj\\",
+        "projectPath": "D:\\github\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
+        "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\SADM-para-Computek\\APS.Security\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\wayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -98,14 +99,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\wayne\\source\\repos\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
-                "projectPath": "C:\\Users\\wayne\\source\\repos\\SADM-para-Computek\\APS.Data\\APS.Data.csproj"
+              "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
+                "projectPath": "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj"
               }
             }
           }
@@ -140,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

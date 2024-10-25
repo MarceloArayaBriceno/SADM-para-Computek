@@ -9,6 +9,8 @@ using Rotativa.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 // Configura DbContext con SQL Server
 builder.Services.AddDbContext<ApdatadbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))

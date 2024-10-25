@@ -1578,3 +1578,8 @@ D:\github\SADM-para-Computek\APS.Web\obj\Debug\net8.0\refint\APS.Web.dll
 D:\github\SADM-para-Computek\APS.Web\obj\Debug\net8.0\APS.Web.pdb
 D:\github\SADM-para-Computek\APS.Web\obj\Debug\net8.0\APS.Web.genruntimeconfig.cache
 D:\github\SADM-para-Computek\APS.Web\obj\Debug\net8.0\ref\APS.Web.dll
+D:\github\SADM-para-Computek\APS.Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\github\SADM-para-Computek\APS.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\github\SADM-para-Computek\APS.Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\github\SADM-para-Computek\APS.Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\github\SADM-para-Computek\APS.Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
