@@ -4,6 +4,7 @@ using APS.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace APS.Data.Migrations
 {
     [DbContext(typeof(ApdatadbContext))]
-    partial class ApdatadbContextModelSnapshot : ModelSnapshot
+    [Migration("20241031004451_TablaProductos")]
+    partial class TablaProductos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -266,7 +269,7 @@ namespace APS.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Precio")
+                    b.Property<double>("Precio")
                         .HasColumnType("float");
 
                     b.Property<string>("RutaImagen")
