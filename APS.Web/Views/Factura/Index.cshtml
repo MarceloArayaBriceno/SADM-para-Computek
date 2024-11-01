@@ -1,0 +1,92 @@
+﻿@model IEnumerable<APS.Data.Models.Factura>
+
+@{
+    ViewData["Title"] = "Listado de Facturas";
+}
+
+<style>
+    .thead-dark {
+        color: white;
+        background-color: #333333;
+        border-color: #121212;
+    }
+
+    .factura-tr {
+        color: white;
+        background-color: #010101;
+        border-color: #121212;
+    }
+</style>
+
+<a asp-action="Create" class="btn btn-primary mb-4">Crear nueva factura</a>
+
+<h2>Listado de Facturas</h2>
+
+<table class="table">
+    <thead class="">
+        <tr class="thead-dark">
+            <th>ID</th>
+            <th>Nombre Cliente</th>
+            <th>Dirección Cliente</th>
+            <th>Fecha</th>
+            <th>Total</th>
+            <th>Total con IVA (13%)</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var factura in Model)
+        {
+            var totalConIVA = factura.Total * 1.13m; // Cálculo del total con IVA
+            <tr class="factura-tr">
+                <td>@factura.FacturaID</td>
+                <td>@factura.NombreCliente</td>
+                <td>@factura.DireccionCliente</td>
+                <td>@factura.Fecha.ToString("yyyy-MM-dd")</td>
+                <td>@factura.Total.ToString("C")</td>
+                <td>@totalConIVA.ToString("C")</td> <!-- Mostrar total con IVA -->
+                <td>
+                    <a asp-action="Edit" asp-route-id="@factura.FacturaID" class="btn btn-primary">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@factura.FacturaID" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
+
+            <!-- Subtabla para los detalles de la factura -->
+            @if (factura.DetallesFactura.Count > 0)
+            {
+                <tr>
+                    <td colspan="6">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Descripción</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio Unitario</th>
+                                    <th>Subtotal</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var detalle in factura.DetallesFactura)
+                                {
+                                    <tr>
+                                        <td>@detalle.Descripcion</td>
+                                        <td>@detalle.Cantidad</td>
+                                        <td>@detalle.PrecioUnitario.ToString("C")</td>
+                                        <td>@detalle.Subtotal.ToString("C")</td>
+                                        <td>
+                                            <form asp-action="DeleteDetalle" asp-route-facturaId="@factura.FacturaID" asp-route-detalleId="@detalle.DetalleID" method="post" style="display:inline;">
+                                                <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            }
+            
+        }
+    </tbody>
+</table>

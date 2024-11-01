@@ -1,0 +1,82 @@
+﻿@model FacturaViewModel
+
+@{
+    ViewData["Title"] = "Editar Factura";
+}
+
+<h2>Editar Factura</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="FacturaID" />
+    <div class="form-group">
+        <label asp-for="NombreCliente"></label>
+        <input asp-for="NombreCliente" class="form-control" />
+        <span asp-validation-for="NombreCliente" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DireccionCliente"></label>
+        <input asp-for="DireccionCliente" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Fecha"></label>
+        <input asp-for="Fecha" class="form-control" type="date" />
+        <span asp-validation-for="Fecha" class="text-danger"></span>
+    </div>
+
+    <h3>Detalles de la Factura</h3>
+    <div id="detallesContainer">
+        @for (int i = 0; i < Model.DetallesFactura.Count; i++)
+        {
+            <div class="detalles">
+                <div class="form-group">
+                    <label asp-for="DetallesFactura[i].Descripcion"></label>
+                    <input asp-for="DetallesFactura[i].Descripcion" class="form-control" />
+                    <span asp-validation-for="DetallesFactura[i].Descripcion" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DetallesFactura[i].Cantidad"></label>
+                    <input asp-for="DetallesFactura[i].Cantidad" class="form-control" type="number" />
+                    <span asp-validation-for="DetallesFactura[i].Cantidad" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DetallesFactura[i].PrecioUnitario"></label>
+                    <input asp-for="DetallesFactura[i].PrecioUnitario" class="form-control" type="number" step="0.01" />
+                    <span asp-validation-for="DetallesFactura[i].PrecioUnitario" class="text-danger"></span>
+                </div>
+                <input type="hidden" asp-for="DetallesFactura[i].DetalleID" />
+                <hr />
+            </div>
+        }
+    </div>
+
+    <button type="button" class="btn btn-secondary" onclick="addDetalle()">Agregar Detalle</button>
+    <br /><br />
+    <input type="submit" value="Guardar Cambios" class="btn btn-primary" />
+</form>
+
+@section Scripts {
+    <script>
+        function addDetalle() {
+            const container = document.getElementById("detallesContainer");
+            const index = container.children.length;
+
+            const newDetalle = `
+                        <div class="detalles">
+                            <div class="form-group">
+                                <label for="DetallesFactura_${index}__Descripcion">Descripción</label>
+                                <input name="DetallesFactura[${index}].Descripcion" class="form-control" />
+                            </div>
+                            <div class="form-group">
+                                <label for="DetallesFactura_${index}__Cantidad">Cantidad</label>
+                                <input name="DetallesFactura[${index}].Cantidad" class="form-control" type="number" />
+                            </div>
+                            <div class="form-group">
+                                <label for="DetallesFactura_${index}__PrecioUnitario">Precio Unitario</label>
+                                <input name="DetallesFactura[${index}].PrecioUnitario" class="form-control" type="number" step="0.01" />
+                            </div>
+                            <hr />
+                        </div>`;
+            container.insertAdjacentHTML('beforeend', newDetalle);
+        }
+    </script>
+}
