@@ -6,10 +6,13 @@ using APS.Web.Filters;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Rotativa.AspNetCore;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-
+var cultureInfo = new CultureInfo("es-CR");
+CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
 // Configura DbContext con SQL Server
 builder.Services.AddDbContext<ApdatadbContext>(options =>

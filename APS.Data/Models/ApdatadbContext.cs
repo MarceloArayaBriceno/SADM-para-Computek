@@ -28,6 +28,9 @@ namespace APS.Data.Models
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<HistorialEquipo> HistorialEquipos { get; set; }
 
+        public virtual DbSet<Factura> Facturas { get; set; }
+        public virtual DbSet<DetalleFactura> DetalleFacturas { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -168,6 +171,68 @@ namespace APS.Data.Models
                     .HasColumnName("FechaCambio")
                     .HasColumnType("datetime")
                     .HasDefaultValueSql("(getdate())");
+            });
+
+            // Configuracion para la entidad factura
+            modelBuilder.Entity<Factura>(entity =>
+            {
+                entity.HasKey(e => e.FacturaID);
+                entity.ToTable("Facturas");
+
+                entity.Property(e => e.FacturaID).HasColumnName("FacturaID");
+                entity.Property(e => e.NombreCliente)
+                    .HasColumnName("NombreCliente")
+                    .HasColumnType("nvarchar(50)")
+                    .IsRequired();
+
+                entity.Property(e => e.DireccionCliente)
+                    .HasColumnName("DireccionCliente")
+                    .HasColumnType("nvarchar(100)");
+
+                entity.Property(e => e.Fecha)
+                    .HasColumnName("Fecha")
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())")
+                    .IsRequired();
+
+                entity.Property(e => e.Total)
+                    .HasColumnName("Total")
+                    .HasColumnType("decimal(10, 2)")
+                    .IsRequired();
+
+                entity.HasMany(e => e.DetallesFactura)
+                    .WithOne(d => d.Factura)
+                    .HasForeignKey(d => d.FacturaID)
+                     .OnDelete(DeleteBehavior.Cascade);
+            });
+
+            // Configuracion para la entidad detalle de factura
+            modelBuilder.Entity<DetalleFactura>(entity =>
+            {
+                entity.HasKey(e => e.DetalleID);
+                entity.ToTable("DetallesFactura");
+
+                entity.Property(e => e.DetalleID).HasColumnName("DetalleID");
+                entity.Property(e => e.FacturaID).HasColumnName("FacturaID").IsRequired();
+
+                entity.Property(e => e.Descripcion)
+                    .HasColumnName("Descripcion")
+                    .HasColumnType("nvarchar(100)")
+                    .IsRequired();
+
+                entity.Property(e => e.Cantidad)
+                    .HasColumnName("Cantidad")
+                    .HasColumnType("int")
+                    .IsRequired();
+
+                entity.Property(e => e.PrecioUnitario)
+                    .HasColumnName("PrecioUnitario")
+                    .HasColumnType("decimal(10, 2)")
+                    .IsRequired();
+
+                entity.HasOne(d => d.Factura)
+                    .WithMany(f => f.DetallesFactura)
+                    .HasForeignKey(d => d.FacturaID);
             });
 
             OnModelCreatingPartial(modelBuilder);

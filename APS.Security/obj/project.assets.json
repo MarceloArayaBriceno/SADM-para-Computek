@@ -2940,19 +2940,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\XPC\\.nuget\\packages\\": {}
+    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
+      "projectUniqueName": "D:\\Computek2\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
       "projectName": "APS.Security",
-      "projectPath": "D:\\github\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
-      "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\SADM-para-Computek\\APS.Security\\obj\\",
+      "projectPath": "D:\\Computek2\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
+      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+      "outputPath": "D:\\Computek2\\SADM-para-Computek\\APS.Security\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2967,8 +2972,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
-              "projectPath": "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj"
+            "D:\\Computek2\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
+              "projectPath": "D:\\Computek2\\SADM-para-Computek\\APS.Data\\APS.Data.csproj"
             }
           }
         }
@@ -3003,7 +3008,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
