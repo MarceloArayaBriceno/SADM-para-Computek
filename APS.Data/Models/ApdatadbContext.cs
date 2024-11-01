@@ -28,6 +28,8 @@ namespace APS.Data.Models
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<HistorialEquipo> HistorialEquipos { get; set; }
 
+        public virtual DbSet<Producto> Producto { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
