@@ -85,6 +85,6 @@ app.MapRazorPages();  // <-- Esto es clave para Razor Pages
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Tienda}/{action=Index}/{id?}");
 
 app.Run();
