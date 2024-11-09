@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Computek</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/StyleClienteLayout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/StyleAdmin.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
@@ -44,14 +43,14 @@
             <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <div class="sb-sidenav-menu-heading">Core</div>
-                        <a class="nav-link" href="index.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Dashboard
+                        <div class="sb-sidenav-menu-heading">Equipos</div>
+                        <a class="nav-link" asp-controller="Equipos" asp-action="VerificarAprobaciones" >
+                            <div class="sb-nav-link-icon"><i class="fas fa-microchip"></i></div>
+                            Equipos
                         </a>
-                        <div class="sb-sidenav-menu-heading">Interface</div>
+                        <div class="sb-sidenav-menu-heading">Factura</div>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            <div class="sb-nav-link-icon"><i class="bi bi-file-text"></i></div>
                             Layouts
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
@@ -110,28 +109,13 @@
             </nav>
         </div>
         <div id="layoutSidenav_content">
+            
+
+            <!--Main Aqui-->
             <main>
-                <div class="container-fluid px-4">
-                    <h1 class="mt-4">Static Navigation</h1>
-                    <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Static Navigation</li>
-                    </ol>
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <p class="mb-0">
-                                This page is an example of using static navigation. By removing the
-                                <code>.sb-nav-fixed</code>
-                                class from the
-                                <code>body</code>
-                                , the top navigation and side navigation will become static on scroll. Scroll down this page to see an example.
-                            </p>
-                        </div>
-                    </div>
-                    <div style="height: 100vh"></div>
-                    <div class="card mb-4"><div class="card-body">When scrolling, the navigation stays at the top of the page. This is the end of the static navigation demo.</div></div>
-                </div>
+                @RenderBody();
             </main>
+
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
@@ -162,7 +146,7 @@
     <!-- Incluir jQuery antes de otros scripts que lo dependan -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/AdminSite.js" asp-append-version="true"></script>
 
     <!-- Sección de scripts específicos para validación y desarrollo -->
     <environment names="Development">
