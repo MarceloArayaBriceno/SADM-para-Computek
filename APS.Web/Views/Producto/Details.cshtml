@@ -1,0 +1,19 @@
+﻿@model APS.Data.Models.Producto
+@{
+    ViewData["Title"] = "Detalles del Producto";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Detalles del Producto</h2>
+    <div class="card shadow">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Nombre</h5>
+            <p class="card-text"><strong>Descripción:</strong> @Model.Descripcion</p>
+            <p class="card-text"><strong>Precio:</strong> @Model.Precio.ToString("C")</p>
+            <p class="card-text"><strong>Stock:</strong> @Model.Stock</p>
+            <p class="card-text"><strong>Fecha de Registro:</strong> @Model.FechaRegistro.ToShortDateString()</p>
+            <a href="@Url.Action("Index")" class="btn btn-secondary">Volver a la Lista</a>
+        </div>
+    </div>
+</div>
