@@ -16,6 +16,12 @@ namespace APS.Web.Controllers
         // GET: TiendaController
         public ActionResult Index()
         {
+            
+            return View();
+        }
+
+        public ActionResult ProductosAll()
+        {
             var productos = _context.Producto.ToList();
             return View(productos);
         }

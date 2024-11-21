@@ -100,7 +100,7 @@ namespace APS.Web.Controllers
         public IActionResult Logout()
         {
             HttpContext.Session.Clear(); // Limpia la sesión
-            return RedirectToAction("Index", "Login");
+            return RedirectToAction("Index", "Tienda");
         }
     }
 }

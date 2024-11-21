@@ -9,7 +9,7 @@
     <div class="alert alert-warning">
         <p>¿Estás seguro de que deseas eliminar el producto <strong>@Model.Nombre</strong>?</p>
     </div>
-    <form asp-action="DeleteConfirmed">
+    <form asp-action="Delete">
         <input type="hidden" asp-for="IdProducto" />
         <button type="submit" class="btn btn-danger">Eliminar</button>
         <a href="@Url.Action("Index")" class="btn btn-secondary">Cancelar</a>
