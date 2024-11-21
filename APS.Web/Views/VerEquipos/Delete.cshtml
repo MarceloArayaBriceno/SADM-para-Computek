@@ -4,35 +4,32 @@
     ViewData["Title"] = "Eliminar Equipo";
 }
 
-<h2>Eliminar Equipo</h2>
+<div class="container my-4">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-center" style="color: #0C3C60; font-weight: bold;">Eliminar Equipo</h2>
+        <h4 class="text-center mt-3" style="color: #FF7E7E;">¿Estás seguro de que deseas eliminar este equipo?</h4>
+        <div class="text-center mb-4" style="font-size: 1.2rem; color: #0C3C60;">
+            <strong>@Model.Marca @Model.Modelo</strong>
+        </div>
+        <hr />
 
-<h3>¿Estás seguro de que deseas eliminar este equipo?</h3>
-<div>
-    <h4>@Model.Marca @Model.Modelo</h4>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.NombreCliente)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.NombreCliente)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.MotivoIngreso)
-        </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.MotivoIngreso)
-        </dd>
-        <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.FechaIngreso)
-        </dt>
-        <!-- Mostrar más detalles si es necesario -->
-    </dl>
+        <dl class="row">
+            <dt class="col-sm-4" style="color: #0C3C60;">@Html.DisplayNameFor(model => model.NombreCliente)</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.NombreCliente)</dd>
 
-    <form asp-action="Delete" method="post">
-        <input type="hidden" asp-for="EquipoId" />
-        <input type="submit" value="Eliminar" class="btn btn-danger" />
-        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
-    </form>
+            <dt class="col-sm-4" style="color: #0C3C60;">@Html.DisplayNameFor(model => model.MotivoIngreso)</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.MotivoIngreso)</dd>
 
+            <dt class="col-sm-4" style="color: #0C3C60;">@Html.DisplayNameFor(model => model.FechaIngreso)</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.FechaIngreso)</dd>
+        </dl>
+
+        <div class="text-center">
+            <form asp-action="Delete" method="post" class="d-inline">
+                <input type="hidden" asp-for="EquipoId" />
+                <button type="submit" class="btn" style="background-color: #FF7E7E; color: white;">Eliminar</button>
+            </form>
+            <a asp-action="Index" class="btn" style="background-color: #83CCCA; color: white;">Cancelar</a>
+        </div>
+    </div>
 </div>

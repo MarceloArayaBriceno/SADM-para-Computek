@@ -5,7 +5,6 @@ using APS.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Rotativa.AspNetCore;
 using APS.Web.Filters;
 
 namespace APS.Web.Controllers
@@ -94,31 +93,6 @@ namespace APS.Web.Controllers
         public IActionResult EquipoRechazado()
         {
             return View();
-        }
-
-
-        // Acción para generar el PDF de un equipo específico
-        public IActionResult GenerarReporte(int equipoId)
-        {
-            // Buscar el equipo en la base de datos
-            var equipo = _context.Equipos.FirstOrDefault(e => e.EquipoId == equipoId);
-
-            if (equipo == null)
-            {
-                return NotFound();
-            }
-
-            // Crea una lista con un solo equipo para pasarlo a la vista
-            var equipoViewModel = new List<Equipo> { equipo };
-
-            // Utiliza la vista "ReporteEquipoPdf" para generar el PDF de un solo equipo
-            return new ViewAsPdf("ReporteEquipoPdf", equipoViewModel)
-            {
-                FileName = $"Reporte_Equipo_{equipo.Marca}_{equipo.Modelo}.pdf",
-                PageSize = Rotativa.AspNetCore.Options.Size.A4,
-                PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
-                PageMargins = new Rotativa.AspNetCore.Options.Margins(10, 10, 10, 10)
-            };
         }
 
     }

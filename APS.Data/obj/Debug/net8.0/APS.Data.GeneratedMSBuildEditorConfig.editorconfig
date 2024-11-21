@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = APS.Data
-build_property.ProjectDir = D:\Computek2\SADM-para-Computek\APS.Data\
+build_property.ProjectDir = D:\github\SADM-para-Computek\APS.Data\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -5,7 +5,6 @@ using APS.Web.Architecture;
 using APS.Web.Filters;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Rotativa.AspNetCore;
 using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,9 +15,14 @@ CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
 // Configura DbContext con SQL Server
 builder.Services.AddDbContext<ApdatadbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
-           .EnableSensitiveDataLogging() // Para habilitar el logging de datos sensibles
-           .LogTo(Console.WriteLine));   // Para enviar los logs a la consola
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    if (builder.Environment.IsDevelopment())
+    {
+        options.EnableSensitiveDataLogging();
+        options.LogTo(Console.WriteLine);
+    }
+});
 
 // Configura Identity
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
@@ -44,7 +48,7 @@ builder.Services.AddDistributedMemoryCache();
 // Configurar y añadir el servicio de sesión
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(1); // Tiempo de expiración de la sesión
+    options.IdleTimeout = TimeSpan.FromMinutes(128); // Tiempo de expiración de la sesión
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
@@ -59,8 +63,6 @@ ServicesConfiguration.Register(builder.Services);
 // Construye la aplicación
 var app = builder.Build();
 
-// Configura Rotativa
-RotativaConfiguration.Setup(app.Environment.WebRootPath, "Rotativa");
 
 // Configura el pipeline de la aplicación
 if (!app.Environment.IsDevelopment())

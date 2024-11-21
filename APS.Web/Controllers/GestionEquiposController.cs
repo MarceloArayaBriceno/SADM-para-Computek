@@ -1,7 +1,6 @@
 ﻿using APS.Data.Models;
 using APS.Web.Filters;
 using Microsoft.AspNetCore.Mvc;
-using Rotativa.AspNetCore;
 using System.Linq;
 
 namespace APS.Web.Controllers
@@ -50,23 +49,6 @@ namespace APS.Web.Controllers
 
             return RedirectToAction("Index", new { equipoId = equipoId });
         }
-
-        // Acción para generar el reporte en PDF del historial de un equipo
-        public IActionResult GenerarReporteHistorial(int equipoId)
-        {
-            // Obtener el historial de cambios para el equipo con el ID seleccionado
-            var historial = _context.HistorialEquipos
-                .Where(h => h.EquipoId == equipoId)
-                .OrderByDescending(h => h.FechaCambio)
-                .ToList();
-
-            // Generar el PDF utilizando la vista ReporteHistorialPdf.cshtml
-            return new ViewAsPdf("ReporteHistorialPdf", historial)
-            {
-                FileName = $"HistorialEquipo_{equipoId}.pdf"
-            };
-        }
-
         // Acción para finalizar la atención del equipo
         public IActionResult FinalizarAtencion(int equipoId)
         {
