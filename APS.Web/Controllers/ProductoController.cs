@@ -155,9 +155,9 @@ namespace APS.Web.Controllers
             if (producto != null)
             {
                 _context.Producto.Remove(producto);
-                await _context.SaveChangesAsync();
+               
             }
-
+            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
