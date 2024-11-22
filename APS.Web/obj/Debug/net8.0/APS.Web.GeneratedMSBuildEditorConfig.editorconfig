@@ -17,159 +17,159 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = APS.Web
 build_property.RootNamespace = APS.Web
-build_property.ProjectDir = D:\github\SADM-para-Computek\APS.Web\
+build_property.ProjectDir = D:\Computek1\SADM-para-Computek\APS.Web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\github\SADM-para-Computek\APS.Web
+build_property.MSBuildProjectDirectory = D:\Computek1\SADM-para-Computek\APS.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Accounts/Login.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Accounts/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudHNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Equipos/Create.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Equipos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Equipos/EquipoRechazado.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Equipos/EquipoRechazado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xFcXVpcG9SZWNoYXphZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Equipos/VerificarAprobaciones.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Equipos/VerificarAprobaciones.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBvc1xWZXJpZmljYXJBcHJvYmFjaW9uZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Factura/Create.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Factura/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Factura/Delete.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Factura/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Factura/Edit.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Factura/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Factura/Index.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Factura/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/GestionEquipos/Index.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/GestionEquipos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VzdGlvbkVxdWlwb3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Home/Index.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Home/Privacy.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Mantenimientos/Index.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Mantenimientos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudGVuaW1pZW50b3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Producto/Create.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Producto/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Producto/Delete.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Producto/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Producto/Details.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Producto/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Producto/Edit.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Producto/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Producto/Index.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Producto/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Shared/Error.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Shared/_AdminLayout.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Shared/_ClienteLayout.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Shared/_ClienteLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DbGllbnRlTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Shared/_ErrorPartial.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Shared/_ErrorPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FcnJvclBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Tienda/Carrito.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Tienda/Carrito.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXENhcnJpdG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Tienda/Index.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Tienda/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Tienda/ProductosAll.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Tienda/ProductosAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXFByb2R1Y3Rvc0FsbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Tienda/ProductosAll1.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Tienda/ProductosAll1.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGllbmRhXFByb2R1Y3Rvc0FsbDEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Users/Create.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Users/Delete.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Users/Details.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Users/Edit.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Users/Index.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/VerEquipos/Delete.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/VerEquipos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyRXF1aXBvc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/VerEquipos/Edit.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/VerEquipos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyRXF1aXBvc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/VerEquipos/Index.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/VerEquipos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyRXF1aXBvc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/_ViewImports.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/_ViewStart.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/github/SADM-para-Computek/APS.Web/Views/Shared/_Layout.cshtml]
+[D:/Computek1/SADM-para-Computek/APS.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zoacovwiv9

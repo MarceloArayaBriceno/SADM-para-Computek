@@ -1964,7 +1964,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.10"
         },
         "runtime": {
-          "APS.Data.dll": {}
+          "APS.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "APS.Security/1.0.0": {
@@ -1972,7 +1975,10 @@
           "APS.Data": "1.0.0"
         },
         "runtime": {
-          "APS.Security.dll": {}
+          "APS.Security.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

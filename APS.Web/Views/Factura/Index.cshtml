@@ -20,73 +20,109 @@
 
 <a asp-action="Create" class="btn btn-primary mb-4">Crear nueva factura</a>
 
+<form method="get" asp-action="Index" class="mb-4">
+    <div class="input-group">
+        <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" class="form-control" placeholder="Buscar por nombre de cliente o ID de factura">
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+</form>
+
 <h2>Listado de Facturas</h2>
 
-<table class="table">
-    <thead class="">
-        <tr class="thead-dark">
-            <th>ID</th>
-            <th>Nombre Cliente</th>
-            <th>Dirección Cliente</th>
-            <th>Fecha</th>
-            <th>Total</th>
-            <th>Total con IVA (13%)</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var factura in Model)
-        {
-            var totalConIVA = factura.Total * 1.13m; // Cálculo del total con IVA
-            <tr class="factura-tr">
-                <td>@factura.FacturaID</td>
-                <td>@factura.NombreCliente</td>
-                <td>@factura.DireccionCliente</td>
-                <td>@factura.Fecha.ToString("yyyy-MM-dd")</td>
-                <td>@factura.Total.ToString("C")</td>
-                <td>@totalConIVA.ToString("C")</td> <!-- Mostrar total con IVA -->
-                <td>
-                    <a asp-action="Edit" asp-route-id="@factura.FacturaID" class="btn btn-primary">Editar</a>
-                    <a asp-action="Delete" asp-route-id="@factura.FacturaID" class="btn btn-danger">Eliminar</a>
-                </td>
-            </tr>
+@if (Model.Any())
 
-            <!-- Subtabla para los detalles de la factura -->
-            @if (factura.DetallesFactura.Count > 0)
+{
+    @if (@ViewData["CurrentFilter"] != null)
+
+    {
+        <div>
+            <h3>Mostrando resultados de "@ViewData["CurrentFilter"]"</h3>
+        </div>
+    }
+    <table class="table">
+        <thead class="">
+            <tr class="thead-dark">
+                <th>ID</th>
+                <th>Nombre Cliente</th>
+                <th>Dirección Cliente</th>
+                <th>Fecha</th>
+                <th>Total</th>
+                <th>Total con IVA (13%)</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var factura in Model)
+
             {
-                <tr>
-                    <td colspan="6">
-                        <table class="table table-sm">
-                            <thead>
-                                <tr>
-                                    <th>Descripción</th>
-                                    <th>Cantidad</th>
-                                    <th>Precio Unitario</th>
-                                    <th>Subtotal</th>
-                                    <th>Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach (var detalle in factura.DetallesFactura)
-                                {
-                                    <tr>
-                                        <td>@detalle.Descripcion</td>
-                                        <td>@detalle.Cantidad</td>
-                                        <td>@detalle.PrecioUnitario.ToString("C")</td>
-                                        <td>@detalle.Subtotal.ToString("C")</td>
-                                        <td>
-                                            <form asp-action="DeleteDetalle" asp-route-facturaId="@factura.FacturaID" asp-route-detalleId="@detalle.DetalleID" method="post" style="display:inline;">
-                                                <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                }
-                            </tbody>
-                        </table>
+
+                var totalConIVA = factura.Total * 1.13m; // Cálculo del total con IVA
+                <tr class="factura-tr">
+                    <td>@factura.FacturaID</td>
+                    <td>@factura.NombreCliente</td>
+                    <td>@factura.DireccionCliente</td>
+                    <td>@factura.Fecha.ToString("yyyy-MM-dd")</td>
+                    <td>@factura.Total.ToString("C")</td>
+                    <td>@totalConIVA.ToString("C")</td> <!-- Mostrar total con IVA -->
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@factura.FacturaID" class="btn btn-primary">Editar</a>
+                        <a asp-action="Delete" asp-route-id="@factura.FacturaID" class="btn btn-danger">Eliminar</a>
                     </td>
                 </tr>
+
+                <!-- Subtabla para los detalles de la factura -->
+                @if (factura.DetallesFactura.Count > 0)
+
+                {
+                    <tr>
+                        <td colspan="6">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>Descripción</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio Unitario</th>
+                                        <th>Subtotal</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var detalle in factura.DetallesFactura)
+                                    {
+                                        <tr>
+                                            <td style="min-width: 20vw; text-wrap: wrap;">@detalle.Descripcion</td>
+                                            <td>@detalle.Cantidad</td>
+                                            <td>@detalle.PrecioUnitario.ToString("C")</td>
+                                            <td>@detalle.Subtotal.ToString("C")</td>
+                                            <td>
+                                                <form asp-action="DeleteDetalle" asp-route-facturaId="@factura.FacturaID" asp-route-detalleId="@detalle.DetalleID" method="post" style="display:inline;">
+                                                    <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                }
+
             }
-            
-        }
-    </tbody>
-</table>
+        </tbody>
+    </table>
+
+}
+else
+
+{
+    <div>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">No se encontraron facturas</h1>
+                <p class="lead">Agrega facturas nuevas o busca con otro criterio</p>
+            </div>
+        </div>
+
+    </div>
+}
