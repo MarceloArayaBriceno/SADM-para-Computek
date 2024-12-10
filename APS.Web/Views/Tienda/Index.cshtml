@@ -1,0 +1,115 @@
+﻿@model IEnumerable<APS.Data.Models.Producto>
+@{
+    Layout = "~/Views/Shared/_ClienteLayout.cshtml";
+    ViewData["Title"] = "Inicio Tienda";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/StyleLandigPage.css" />
+}
+
+<!-- Header-->
+<header class="masthead">
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-xl-6">
+                <div class="text-center text-white">
+                    <!-- Page heading-->
+                    <h1 class="mb-5">Soluciones Tecnológicas Personalizadas para tu Negocio o Hogar</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Icons Grid-->
+<section class="features-icons bg-light text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="bi bi-motherboard m-auto text-primary"></i>
+                    </div>
+                    <h3>Reparaciones Técnicas Especializadas</h3>
+                    <p class="lead mb-0">Ofrecemos servicios de diagnóstico y reparación para computadores, laptops y dispositivos periféricos. ¡Tu equipo estará como nuevo!</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="bi bi-cpu m-auto text-primary"></i>
+                    </div>
+                    <h3>Venta de Componentes Hardware</h3>
+                    <p class="lead mb-0">Encuentra desde tarjetas madre hasta unidades de almacenamiento de última generación. Nos aseguramos de ofrecerte las mejores marcas del mercado.</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="features-icons-icon d-flex">
+                        <i class="bi bi-pc-display-horizontal m-auto text-primary"></i>
+                    </div>
+                    <h3>Servicios de Mantenimiento Preventivo</h3>
+                    <p class="lead mb-0">Nuestro mantenimiento preventivo asegura que tu hardware funcione de manera óptima, evitando fallos inesperados y reduciendo costos a largo plazo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Image Showcases-->
+<section class="showcase">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/img/Teclado.jpg')"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Periféricos de Alta Calidad para tu Equipo</h2>
+                <p class="lead mb-0">En Computek, ofrecemos una amplia variedad de periféricos para mejorar la experiencia de tu equipo. Desde teclados, monitores y audífonos, hasta cámaras web y dispositivos de almacenamiento externo, tenemos todo lo que necesitas para optimizar tu productividad y entretenimiento.</p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 text-white showcase-img" style="background-image: url('/img/MotherBoardTUFF.jpg')"></div>
+            <div class="col-lg-6 my-auto showcase-text">
+                <h2>Siempre tendrás lo mejor en tecnología</h2>
+                <p class="lead mb-0">Actualizamos constantemente nuestro inventario para ofrecer lo último en hardware, como tarjetas madre, procesadores y más.</p>
+            </div>
+        </div>
+        <div class="row g-0">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('/img/Hardware.jpg')"></div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                <h2>Nos adaptamos a tus necesidades únicas</h2>
+                <p class="lead mb-0">No importa si necesitas un servicio básico o soluciones a medida, Computek es tu socio ideal en tecnología.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials-->
+<section class="testimonials text-center bg-light">
+    <div class="container">
+        <h2 class="mb-5">Lo que dicen nuestros clientes...</h2>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="/img/testimonials-1.jpg" alt="..." />
+                    <h5>María P.</h5>
+                    <p class="font-weight-light mb-0">"Gracias a Computek, mi equipo está funcionando mejor que nunca. El servicio al cliente fue increíble y me ayudaron a elegir los mejores componentes para mi PC. ¡Altamente recomendados!"</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="/img/testimonials-2.jpg" alt="..." />
+                    <h5>Ricardo T.</h5>
+                    <p class="font-weight-light mb-0">"El mantenimiento preventivo realmente ha optimizado el rendimiento de mis equipos. ¡Gracias, Computek!"</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                    <img class="img-fluid rounded-circle mb-3" src="/img/testimonials-3.jpg" alt="..." />
+                    <h5>Laura G.</h5>
+                    <p class="font-weight-light mb-0">"Compré una tarjeta gráfica increíble a un precio muy competitivo. Su atención al cliente es excelente."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

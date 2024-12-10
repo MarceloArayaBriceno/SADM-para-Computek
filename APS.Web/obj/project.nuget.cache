@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cdygiFWAgcM=",
+  "dgSpecHash": "9EB6MQEpOuI=",
   "success": true,
-  "projectFilePath": "D:\\Computek2\\SADM-para-Computek\\APS.Web\\APS.Web.csproj",
+  "projectFilePath": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\APS.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
@@ -129,7 +129,6 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\nuget.projectmodel\\6.11.0\\nuget.projectmodel.6.11.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\nuget.protocol\\6.11.0\\nuget.protocol.6.11.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\nuget.versioning\\6.11.0\\nuget.versioning.6.11.0.nupkg.sha512",
-    "C:\\Users\\Lenovo\\.nuget\\packages\\rotativa.aspnetcore\\1.3.2\\rotativa.aspnetcore.1.3.2.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.composition\\7.0.0\\system.composition.7.0.0.nupkg.sha512",

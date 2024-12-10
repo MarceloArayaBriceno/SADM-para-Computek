@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Computek2\\SADM-para-Computek\\APS.Web\\APS.Web.csproj": {}
+    "D:\\Computek1\\SADM-para-Computek\\APS.Web\\APS.Web.csproj": {}
   },
   "projects": {
-    "D:\\Computek2\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
+    "D:\\Computek1\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Computek2\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
+        "projectUniqueName": "D:\\Computek1\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
         "projectName": "APS.Data",
-        "projectPath": "D:\\Computek2\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
+        "projectPath": "D:\\Computek1\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Computek2\\SADM-para-Computek\\APS.Data\\obj\\",
+        "outputPath": "D:\\Computek1\\SADM-para-Computek\\APS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -81,18 +81,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Computek2\\SADM-para-Computek\\APS.Security\\APS.Security.csproj": {
+    "D:\\Computek1\\SADM-para-Computek\\APS.Security\\APS.Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Computek2\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
+        "projectUniqueName": "D:\\Computek1\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
         "projectName": "APS.Security",
-        "projectPath": "D:\\Computek2\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
+        "projectPath": "D:\\Computek1\\SADM-para-Computek\\APS.Security\\APS.Security.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Computek2\\SADM-para-Computek\\APS.Security\\obj\\",
+        "outputPath": "D:\\Computek1\\SADM-para-Computek\\APS.Security\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -114,8 +114,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Computek2\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
-                "projectPath": "D:\\Computek2\\SADM-para-Computek\\APS.Data\\APS.Data.csproj"
+              "D:\\Computek1\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
+                "projectPath": "D:\\Computek1\\SADM-para-Computek\\APS.Data\\APS.Data.csproj"
               }
             }
           }
@@ -150,18 +150,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Computek2\\SADM-para-Computek\\APS.Web\\APS.Web.csproj": {
+    "D:\\Computek1\\SADM-para-Computek\\APS.Web\\APS.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Computek2\\SADM-para-Computek\\APS.Web\\APS.Web.csproj",
+        "projectUniqueName": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\APS.Web.csproj",
         "projectName": "APS.Web",
-        "projectPath": "D:\\Computek2\\SADM-para-Computek\\APS.Web\\APS.Web.csproj",
+        "projectPath": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\APS.Web.csproj",
         "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Computek2\\SADM-para-Computek\\APS.Web\\obj\\",
+        "outputPath": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -183,11 +183,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Computek2\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
-                "projectPath": "D:\\Computek2\\SADM-para-Computek\\APS.Data\\APS.Data.csproj"
+              "D:\\Computek1\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
+                "projectPath": "D:\\Computek1\\SADM-para-Computek\\APS.Data\\APS.Data.csproj"
               },
-              "D:\\Computek2\\SADM-para-Computek\\APS.Security\\APS.Security.csproj": {
-                "projectPath": "D:\\Computek2\\SADM-para-Computek\\APS.Security\\APS.Security.csproj"
+              "D:\\Computek1\\SADM-para-Computek\\APS.Security\\APS.Security.csproj": {
+                "projectPath": "D:\\Computek1\\SADM-para-Computek\\APS.Security\\APS.Security.csproj"
               }
             }
           }
@@ -216,10 +216,6 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.6, )"
-            },
-            "Rotativa.AspNetCore": {
-              "target": "Package",
-              "version": "[1.3.2, )"
             }
           },
           "imports": [
@@ -241,7 +237,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -7,12 +7,15 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using APS.Data.Models;
+using System.Security.Claims;
 
 namespace APS.Web.Controllers
 {
     public class UsersController(ApdatadbContext context) : Controller
     {
         private readonly ApdatadbContext _context = context;
+
+       
 
         // GET: Users
         public async Task<IActionResult> Index()

@@ -16,12 +16,20 @@ namespace APS.Web.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string? searchString)
         {
+            ViewData["CurrentFilter"] = searchString;
+
             var facturas = await _context.Facturas.Include(f => f.DetallesFactura).ToListAsync();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                var search = searchString.ToLower();
+                facturas = facturas.FindAll(f => f.NombreCliente.ToLower().Contains(search) || f.FacturaID.ToString().Contains(search));
+            }
+
             return View(facturas);
         }
-
 
         [HttpGet, ActionName("Delete")]
         public async Task<IActionResult> Delete(int? id)

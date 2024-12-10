@@ -1,0 +1,58 @@
+﻿@model IEnumerable<APS.Data.Models.Producto>
+@{
+    Layout = "~/Views/Shared/_ClienteLayout.cshtml";
+    ViewData["Title"] = "Inicio Tienda";
+}
+
+@{
+    ViewData["Title"] = "Mantenimientos";
+}
+
+<div class="container my-5">
+    <h2 class="text-center" style="color: #0C3C60; font-weight: bold;">Nuestros Servicios de Mantenimiento</h2>
+    <p class="text-center mt-3" style="font-size: 18px; color: #0C3C60;">
+        En la empresa realizamos mantenimiento, reparaciones e instalaciones a domicilio o de manera remota en caso de que sea posible. Ofrecemos soluciones rápidas a la puerta de su casa o trabajo, y damos <strong>3 meses de garantía</strong> por cada trabajo que realizamos.
+    </p>
+
+    <!-- Grid de servicios -->
+    <div class="row mt-5">
+        <!-- Servicio 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow" style="border: none;">
+                <a href="https://www.serviciotecnicolaflorida.cl/page2.html" target="_blank">
+                    <img src="https://www.serviciotecnicolaflorida.cl/assets/images/mantencion-pc-gamer.jpg" class="card-img-top" alt="Mantenimiento Completo">
+                </a>
+                <div class="card-body text-center" style="background-color: #F1F1F1;">
+                    <h5 class="card-title" style="color: #0C3C60; font-weight: bold;">Mantenimiento Completo</h5>
+                    <p class="card-text" style="color: #0C3C60;">₡25,000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow" style="border: none;">
+                <a href="https://www.zooo.es/se-habla-de/como-hacer-mantenimiento-de-tarjeta-grafica/" target="_blank">
+                    <img src="https://www.zooo.es/wp-content/uploads/2021/07/maxresdefault.jpg" class="card-img-top" alt="Mantenimiento de GPU">
+                </a>
+                <div class="card-body text-center" style="background-color: #F1F1F1;">
+                    <h5 class="card-title" style="color: #0C3C60; font-weight: bold;">Mantenimiento GPU</h5>
+                    <p class="card-text" style="color: #0C3C60;">₡35,000 - ₡45,000</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card shadow" style="border: none;">
+                <a href="https://www.mjsolucionesperu.com/mantenimiento-de-laptops/" target="_blank">
+                    <img src="https://www.mjsolucionesperu.com/wp-content/uploads/2023/02/mantenimiento-laptops.webp" class="card-img-top" alt="Mantenimiento Laptop">
+                </a>
+                <div class="card-body text-center" style="background-color: #F1F1F1;">
+                    <h5 class="card-title" style="color: #0C3C60; font-weight: bold;">Mantenimiento Laptop</h5>
+                    <p class="card-text" style="color: #0C3C60;">₡20,000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

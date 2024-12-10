@@ -31,6 +31,7 @@ namespace APS.Data.Models
         public virtual DbSet<Factura> Facturas { get; set; }
         public virtual DbSet<DetalleFactura> DetalleFacturas { get; set; }
 
+        public virtual DbSet<Producto> Producto { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
