@@ -3,6 +3,8 @@ using APS.Web.Filters;
 using APS.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Globalization;
+using System.Text;
 
 namespace APS.Web.Controllers
 {
@@ -24,11 +26,22 @@ namespace APS.Web.Controllers
 
             if (!string.IsNullOrEmpty(searchString))
             {
-                var search = searchString.ToLower();
-                facturas = facturas.FindAll(f => f.NombreCliente.ToLower().Contains(search) || f.FacturaID.ToString().Contains(search));
+                var search = RemoveAccents(searchString).ToLower();
+
+                facturas = facturas.FindAll(f =>
+                    RemoveAccents(f.NombreCliente).ToLower().Contains(search) ||
+                    f.FacturaID.ToString().Contains(search)
+                );
             }
 
             return View(facturas);
+        }
+
+        [HttpGet, ActionName("Detalle")]
+        public async Task<IActionResult> Detalle(int? id)
+        {
+            var factura = await _context.Facturas.Include(f => f.DetallesFactura).FirstAsync();
+            return View(factura);
         }
 
         [HttpGet, ActionName("Delete")]
@@ -175,6 +188,24 @@ namespace APS.Web.Controllers
 
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
+        }
+
+        private string RemoveAccents(string input)
+        {
+            if (string.IsNullOrEmpty(input)) return input;
+
+            var normalizedString = input.Normalize(NormalizationForm.FormD);
+            var stringBuilder = new System.Text.StringBuilder();
+
+            foreach (var c in normalizedString)
+            {
+                if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
         }
     }
 }
