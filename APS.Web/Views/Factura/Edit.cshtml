@@ -2,7 +2,12 @@
 
 @{
     ViewData["Title"] = "Editar Factura";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
+
+<div class="container my-4">
+
+
 
 <h2>Editar Factura</h2>
 
@@ -52,6 +57,7 @@
     <button type="button" class="btn btn-secondary" onclick="addDetalle()">Agregar Detalle</button>
     <br /><br />
     <input type="submit" value="Guardar Cambios" class="btn btn-primary" />
+        <a href="@Url.Action("Index")" class="btn btn-secondary">Volver a la Facturación</a>
 </form>
 
 @section Scripts {
@@ -80,3 +86,5 @@
         }
     </script>
 }
+
+</div>
