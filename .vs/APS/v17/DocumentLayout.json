@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\github\\SADM-para-Computek\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\tecnicoia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\tecnicoia\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 217,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "APS.Web\\appsettings.json",
+              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\appsettings.json",
+              "RelativeToolTip": "APS.Web\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-13T00:58:09.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_AdminLayout.cshtml",
               "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Shared\\_AdminLayout.cshtml",
               "RelativeDocumentMoniker": "APS.Web\\Views\\Shared\\_AdminLayout.cshtml",
@@ -46,12 +63,11 @@
               "RelativeToolTip": "APS.Web\\Views\\Shared\\_AdminLayout.cshtml",
               "ViewState": "AQIAAC0AAAAAAAAAAAAAAEwAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T00:51:39.961Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T00:51:39.961Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Equipos\\Create.cshtml",
               "RelativeDocumentMoniker": "APS.Web\\Views\\Equipos\\Create.cshtml",
@@ -59,12 +75,11 @@
               "RelativeToolTip": "APS.Web\\Views\\Equipos\\Create.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T00:49:05.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T00:49:05.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\TecnicoIA\\Index.cshtml",
               "RelativeDocumentMoniker": "APS.Web\\Views\\TecnicoIA\\Index.cshtml",
