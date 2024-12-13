@@ -8,6 +8,37 @@
     ViewData["Title"] = "Listado de Equipos";
 }
 
+<style>
+    body {
+        background: linear-gradient(135deg, #83CCCA);
+        background-size: 400% 400%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+        color: #F1EBE2;
+        font-weight: bold;
+    }
+
+    .btn-primary {
+        background-color: #0C3C60;
+        border-color: #0C3C60;
+    }
+
+        .btn-primary:hover {
+            background-color: #083C60;
+            border-color: #083C60;
+        }
+</style>
+
+
 <div class="container my-4">
     <h2 class="text-center" style="color: #0C3C60; font-weight: bold;">Listado de Equipos</h2>
 
@@ -53,8 +84,9 @@
                         <td>@equipo.ContraseñaEquipo</td>
                         <td>@equipo.Descripcion</td>
                         <td>
-                            <a asp-action="Edit" asp-route-id="@equipo.EquipoId" class="btn btn-sm" style="background-color: #83CCCA; color: white;">Editar</a>
-                            <a asp-action="Delete" asp-route-id="@equipo.EquipoId" class="btn btn-sm" style="background-color: #FF7E7E; color: white;">Eliminar</a>
+                            <a asp-action="Edit" asp-route-id="@equipo.EquipoId" class="btn btn-warning btn-sm">Editar</a>
+                            <a asp-action="Delete" asp-route-id="@equipo.EquipoId" class="btn btn-danger btn-sm">Eliminar</a>
+
                         </td>
                     </tr>
                 }

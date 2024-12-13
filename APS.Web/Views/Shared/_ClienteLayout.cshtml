@@ -34,18 +34,12 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" asp-controller="Tienda" asp-action="ProductosAll">Todos los productos</a></li>
                             <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#!">Productos en Promoción</a></li>
-                            <li><a class="dropdown-item" href="#!">Productos Nuevos</a></li>
 
                         </ul>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <button class="btn btn-outline-dark me-2" type="submit" asp-controller="Tienda" asp-action="Carrito" aria-label="Ver carrito">
-                        <i class="bi-cart-fill me-1"></i>
-                        Cart
-                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-                    </button>
+
                     <a class="btn btn-outline-dark" asp-area="" asp-controller="Login" asp-action="Index" aria-label="Iniciar sesión">
                         <i class="bi bi-person me-1"></i>
                         Iniciar Sesión

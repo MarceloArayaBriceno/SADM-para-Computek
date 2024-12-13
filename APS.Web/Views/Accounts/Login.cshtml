@@ -1,62 +1,82 @@
-﻿@* @model APS.Web.Models.LoginModel
+﻿@model APS.Web.Models.LoginModel
 
 @{
     ViewData["Title"] = "Login";
+    Layout = null;
 }
 
-<h2>@ViewData["Title"]</h2>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: linear-gradient(135deg, #083C60, #83CCCA);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-<form asp-action="Login" method="post">
-    <div class="form-group">
-        <label asp-for="Email" class="control-label"></label>
-        <input asp-for="Email" class="form-control" />
+    .login-card {
+        background-color: #ffffff; /* Fondo de la tarjeta */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la tarjeta */
+        border-radius: 10px;
+        max-width: 400px;
+        width: 90%;
+        padding: 20px;
+        text-align: center;
+    }
+
+        .login-card h3 {
+            margin-bottom: 20px;
+            color: #083C60;
+            font-weight: bold;
+        }
+
+        .login-card .form-control {
+            margin-bottom: 15px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .login-card .btn-primary {
+            background-color: #083C60;
+            border-color: #083C60;
+            border-radius: 6px;
+            font-weight: bold;
+            width: 100%;
+            padding: 10px;
+        }
+
+            .login-card .btn-primary:hover {
+                background-color: #062C46;
+                border-color: #062C46;
+            }
+
+        .login-card .small a {
+            color: #83CCCA;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            .login-card .small a:hover {
+                text-decoration: underline;
+            }
+</style>
+
+<div class="login-card">
+    <h3>Computek</h3>
+    <form asp-action="Login" method="post">
+        <h4>@ViewData["Title"]</h4>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <input asp-for="Email" class="form-control" type="email" placeholder="Escribe tu correo electrónico" />
         <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Password" class="control-label"></label>
-        <input asp-for="Password" class="form-control" />
+        <input asp-for="Password" class="form-control" type="password" placeholder="Escribe tu contraseña" />
         <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-    <div class="form-group">
         <button type="submit" class="btn btn-primary">Login</button>
-    </div>
-</form> *@
-
-@model APS.Web.Models.LoginModel
-
-@{
-    ViewData["Title"] = "Login";
-}
-
-
-@Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-
-<div class="row justify-content-center">
-    <div class="col-lg-5">
-        <div class="card shadow-lg border-0 rounded-lg mt-5">
-            <div class="card-header"><h3 class="text-center font-weight-light my-4">@ViewData["Title"]</h3></div>
-            <div class="card-body">
-                <form asp-action="Login" method="post">
-                    <div class="form-group mb-3">
-                        <label asp-for="Email" class="control-label"></label>
-                        <input asp-for="Email" class="form-control" type="email" placeholder="Escribe tu correo electrónico" />
-                        <span asp-validation-for="Email" class="text-danger"></span>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label asp-for="Password" class="control-label"></label>
-                        <input asp-for="Password" class="form-control" type="password" placeholder="Escribe tu contraseña" />
-                        <span asp-validation-for="Password" class="text-danger"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </div>
-                </form>
-            </div>
-            <div class="card-footer text-center py-3">
-                <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
-            </div>
-        </div>
+    </form>
+    <div class="small mt-3">
+        <a href="/Account/Register">Need an account? Sign up!</a>
     </div>
 </div>

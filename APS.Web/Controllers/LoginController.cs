@@ -71,7 +71,7 @@ namespace APS.Web.Controllers
                     HttpContext.Session.SetString("UserEmail", model.Email);
 
                     // Redirige al usuario al Home/Index si la autenticación es exitosa
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Factura");
                 }
                 else
                 {

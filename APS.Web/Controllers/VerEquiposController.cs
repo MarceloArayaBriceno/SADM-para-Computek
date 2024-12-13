@@ -20,28 +20,88 @@ namespace APS.Web.Controllers
         // Acción para listar los equipos con búsqueda
         public async Task<IActionResult> Index(string searchId, string searchCliente)
         {
-            // Obtener todos los equipos
             var equipos = _context.Equipos.AsQueryable();
 
-            // Filtrar por ID si se proporciona
-            if (!string.IsNullOrEmpty(searchId))
+            if (!string.IsNullOrEmpty(searchId) && int.TryParse(searchId, out int id))
             {
-                if (int.TryParse(searchId, out int id))
-                {
-                    equipos = equipos.Where(e => e.EquipoId == id);
-                }
+                equipos = equipos.Where(e => e.EquipoId == id);
             }
 
-            // Filtrar por Nombre del Cliente si se proporciona
             if (!string.IsNullOrEmpty(searchCliente))
             {
                 equipos = equipos.Where(e => e.NombreCliente.Contains(searchCliente));
             }
 
-            // Ejecutar la consulta y enviar a la vista
             return View(await equipos.ToListAsync());
         }
 
-        // Las otras acciones permanecen igual...
+        // Acción para editar un equipo
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var equipo = await _context.Equipos.FindAsync(id);
+            if (equipo == null)
+            {
+                return NotFound();
+            }
+            return View(equipo);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, Equipo equipo)
+        {
+            if (id != equipo.EquipoId)
+            {
+                return BadRequest();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(equipo);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!_context.Equipos.Any(e => e.EquipoId == id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+            }
+            return View(equipo);
+        }
+
+
+        // Acción para eliminar un equipo
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var equipo = await _context.Equipos.FindAsync(id);
+            if (equipo == null)
+            {
+                return NotFound();
+            }
+            return View(equipo);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var equipo = await _context.Equipos.FindAsync(id);
+            if (equipo != null)
+            {
+                _context.Equipos.Remove(equipo);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction(nameof(Index));
+        }
     }
 }

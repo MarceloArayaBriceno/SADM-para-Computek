@@ -4,32 +4,56 @@
     ViewData["Title"] = "Eliminar Equipo";
 }
 
+<style>
+    body {
+        background: linear-gradient(135deg, #FF7E7E, #F1EBE2);
+        background-size: 400% 400%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+        color: #FF7E7E;
+        font-weight: bold;
+    }
+
+    .btn-danger {
+        background-color: #FF7E7E;
+        border-color: #FF7E7E;
+    }
+
+        .btn-danger:hover {
+            background-color: #E56767;
+            border-color: #E56767;
+        }
+
+    .btn-secondary {
+        background-color: #83CCCA;
+        border-color: #83CCCA;
+    }
+
+        .btn-secondary:hover {
+            background-color: #0C3C60;
+            border-color: #0C3C60;
+        }
+</style>
+
+
 <div class="container my-4">
     <div class="card shadow-lg p-4">
-        <h2 class="text-center" style="color: #0C3C60; font-weight: bold;">Eliminar Equipo</h2>
-        <h4 class="text-center mt-3" style="color: #FF7E7E;">¿Estás seguro de que deseas eliminar este equipo?</h4>
-        <div class="text-center mb-4" style="font-size: 1.2rem; color: #0C3C60;">
-            <strong>@Model.Marca @Model.Modelo</strong>
-        </div>
-        <hr />
-
-        <dl class="row">
-            <dt class="col-sm-4" style="color: #0C3C60;">@Html.DisplayNameFor(model => model.NombreCliente)</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.NombreCliente)</dd>
-
-            <dt class="col-sm-4" style="color: #0C3C60;">@Html.DisplayNameFor(model => model.MotivoIngreso)</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.MotivoIngreso)</dd>
-
-            <dt class="col-sm-4" style="color: #0C3C60;">@Html.DisplayNameFor(model => model.FechaIngreso)</dt>
-            <dd class="col-sm-8">@Html.DisplayFor(model => model.FechaIngreso)</dd>
-        </dl>
-
-        <div class="text-center">
-            <form asp-action="Delete" method="post" class="d-inline">
-                <input type="hidden" asp-for="EquipoId" />
-                <button type="submit" class="btn" style="background-color: #FF7E7E; color: white;">Eliminar</button>
-            </form>
-            <a asp-action="Index" class="btn" style="background-color: #83CCCA; color: white;">Cancelar</a>
-        </div>
+        <h2 class="text-center text-danger font-weight-bold">Eliminar Equipo</h2>
+        <p class="text-center">¿Estás seguro de que deseas eliminar este equipo?</p>
+        <p class="text-center font-weight-bold">@Model.Marca @Model.Modelo</p>
+        <form asp-action="Delete" method="post" class="text-center">
+            <input type="hidden" asp-for="EquipoId" />
+            <button type="submit" class="btn btn-danger">Eliminar</button>
+            <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+        </form>
     </div>
 </div>
