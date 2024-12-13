@@ -3,40 +3,24 @@
   "WorkspaceRootPath": "D:\\github\\SADM-para-Computek\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\accounts\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\accounts\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\shared\\_clientelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\shared\\_clientelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\verequipos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\verequipos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\verequipos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\verequipos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\verequipos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\verequipos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\verequipos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\verequipos\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\controllers\\verequiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\controllers\\verequiposcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|d:\\github\\sadm-para-computek\\aps.web\\views\\verequipos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D373D78A-6988-40AB-8D40-71B99A67FE57}|APS.Web\\APS.Web.csproj|solutionrelative:aps.web\\views\\verequipos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 217,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,85 +46,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "APS.Web\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "APS.Web\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAwwEkAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T00:12:12.239Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Accounts\\Login.cshtml",
-              "RelativeDocumentMoniker": "APS.Web\\Views\\Accounts\\Login.cshtml",
-              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Accounts\\Login.cshtml",
-              "RelativeToolTip": "APS.Web\\Views\\Accounts\\Login.cshtml",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T00:12:05.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "APS.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "APS.Web\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T00:09:01.177Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_ClienteLayout.cshtml",
-              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Shared\\_ClienteLayout.cshtml",
-              "RelativeDocumentMoniker": "APS.Web\\Views\\Shared\\_ClienteLayout.cshtml",
-              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Shared\\_ClienteLayout.cshtml",
-              "RelativeToolTip": "APS.Web\\Views\\Shared\\_ClienteLayout.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACMAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T00:08:28.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "APS.Web\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "APS.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACgAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-13T00:08:18.208Z",
+              "WhenOpened": "2024-12-13T00:26:15.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VerEquiposController.cs",
-              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Controllers\\VerEquiposController.cs",
-              "RelativeDocumentMoniker": "APS.Web\\Controllers\\VerEquiposController.cs",
-              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Controllers\\VerEquiposController.cs",
-              "RelativeToolTip": "APS.Web\\Controllers\\VerEquiposController.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAQwFAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T23:51:12.537Z",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Accounts\\Login.cshtml",
+              "RelativeDocumentMoniker": "APS.Web\\Views\\Accounts\\Login.cshtml",
+              "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\Accounts\\Login.cshtml",
+              "RelativeToolTip": "APS.Web\\Views\\Accounts\\Login.cshtml",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAAcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-13T00:24:47.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\VerEquipos\\Edit.cshtml",
               "RelativeDocumentMoniker": "APS.Web\\Views\\VerEquipos\\Edit.cshtml",
@@ -153,26 +85,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\VerEquipos\\Delete.cshtml",
               "RelativeDocumentMoniker": "APS.Web\\Views\\VerEquipos\\Delete.cshtml",
               "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\VerEquipos\\Delete.cshtml",
               "RelativeToolTip": "APS.Web\\Views\\VerEquipos\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-12T23:49:56.655Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\VerEquipos\\Index.cshtml",
               "RelativeDocumentMoniker": "APS.Web\\Views\\VerEquipos\\Index.cshtml",
               "ToolTip": "D:\\github\\SADM-para-Computek\\APS.Web\\Views\\VerEquipos\\Index.cshtml",
               "RelativeToolTip": "APS.Web\\Views\\VerEquipos\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-12-12T23:49:59.989Z",
               "EditorCaption": ""
