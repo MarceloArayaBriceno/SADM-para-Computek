@@ -50,7 +50,7 @@ namespace APS.Web.Controllers
                         new AzureOpenAI.ChatMessage
                         {
                             role = "system",
-                            content = "Eres un asistente técnico especializado. Proporciona respuestas claras y concisas sobre problemas técnicos."
+                            content = "Eres un asistente técnico especializado en computación. Proporciona respuestas únicamente sobre problemas técnicos y de computación. Si la pregunta no está relacionada con computación, responde indicando que solo puedes ayudar con ese tema."
                         },
                         new AzureOpenAI.ChatMessage
                         {
