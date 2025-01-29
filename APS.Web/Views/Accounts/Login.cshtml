@@ -1,12 +1,12 @@
-﻿@model APS.Web.Models.LoginModel
+﻿ @model APS.Web.Models.LoginModel
 
 @{
     ViewData["Title"] = "Login";
     Layout = null;
 }
-
 <style>
-    body {
+   
+body {
         margin: 0;
         padding: 0;
         height: 100%;
@@ -15,38 +15,46 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-family: 'Arial', sans-serif;
     }
 
     .login-card {
         background-color: #ffffff; /* Fondo de la tarjeta */
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para la tarjeta */
-        border-radius: 10px;
-        max-width: 400px;
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+        border-radius: 15px;
+        max-width: 450px;
         width: 90%;
-        padding: 20px;
+        padding: 30px;
         text-align: center;
     }
 
         .login-card h3 {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: #083C60;
+            font-size: 24px;
             font-weight: bold;
         }
 
         .login-card .form-control {
-            margin-bottom: 15px;
-            border-radius: 6px;
+            margin-bottom: 20px;
+            border-radius: 10px;
             border: 1px solid #ddd;
-            padding: 10px;
+            padding: 15px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .login-card .btn-primary {
             background-color: #083C60;
             border-color: #083C60;
-            border-radius: 6px;
+            border-radius: 10px;
             font-weight: bold;
+            font-size: 18px;
             width: 100%;
-            padding: 10px;
+            padding: 12px;
+            color: #ffffff;
+            transition: background-color 0.3s;
         }
 
             .login-card .btn-primary:hover {
@@ -54,26 +62,32 @@
                 border-color: #062C46;
             }
 
-        .login-card .small a {
-            color: #83CCCA;
+        .login-card .forgot-password a {
+            color: #083C60;
             text-decoration: none;
-            font-weight: bold;
+            font-size: 14px;
         }
 
-            .login-card .small a:hover {
+            .login-card .forgot-password a:hover {
                 text-decoration: underline;
+                color: #062C46;
             }
 </style>
 
 <div class="login-card">
     <h3>Computek</h3>
     <form asp-action="Login" method="post">
-        <h4>@ViewData["Title"]</h4>
+        <h4 class="mb-4">@ViewData["Title"]</h4>
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        <input asp-for="Email" class="form-control" type="email" placeholder="Escribe tu correo electrónico" />
+        <input asp-for="Email" class="form-control" type="email" placeholder="Correo electrónico" />
         <span asp-validation-for="Email" class="text-danger"></span>
-        <input asp-for="Password" class="form-control" type="password" placeholder="Escribe tu contraseña" />
+        <input asp-for="Password" class="form-control" type="password" placeholder="Contraseña" />
         <span asp-validation-for="Password" class="text-danger"></span>
-        <button type="submit" class="btn btn-primary">Login</button>
+
+        <button type="submit" class="btn btn-primary mt-3">Iniciar sesión</button>
+
+        <div class="forgot-password mt-3">
+            <a asp-action="ForgotPassword">¿Olvidaste tu contraseña?</a>
+        </div>
     </form>
 </div>
