@@ -1,94 +1,51 @@
-﻿@{
-    ViewData["Title"] = "Crear Equipo - Computek";
+﻿@model IEnumerable<APS.Data.Models.Equipo>
+@{
+    ViewData["Title"] = "Lista de Equipos";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-@model IEnumerable<APS.Data.Models.Equipo>
 
-@{
-    ViewData["Title"] = "Listado de Equipos";
-}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Lista de Equipos</h2>
+    <a href="@Url.Action("Create")" class="btn btn-primary mb-3">Agregar Nuevo Equipo</a>
 
-<style>
-    body {
-        background: linear-gradient(135deg, #83CCCA);
-        background-size: 400% 400%;
-        height: 100%;
-        margin: 0;
-    }
-
-    .card {
-        background: rgba(255, 255, 255, 0.9);
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    h2 {
-        color: #F1EBE2;
-        font-weight: bold;
-    }
-
-    .btn-primary {
-        background-color: #0C3C60;
-        border-color: #0C3C60;
-    }
-
-        .btn-primary:hover {
-            background-color: #083C60;
-            border-color: #083C60;
-        }
-</style>
-
-
-<div class="container my-4">
-    <h2 class="text-center" style="color: #0C3C60; font-weight: bold;">Listado de Equipos</h2>
-
-    <!-- Formulario de búsqueda -->
-    <form asp-action="Index" method="get" class="mb-4">
-        <div class="row">
-            <div class="col-md-4">
-                <input type="text" name="searchId" class="form-control" placeholder="Buscar por ID" />
-            </div>
-            <div class="col-md-4">
-                <input type="text" name="searchCliente" class="form-control" placeholder="Buscar por Nombre del Cliente" />
-            </div>
-            <div class="col-md-4">
-                <button type="submit" class="btn btn-primary w-100" style="background-color: #0C3C60; color: white;">Buscar</button>
-            </div>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Tabla de Equipos
         </div>
-    </form>
-
-    <!-- Tabla de equipos -->
-    <div class="card shadow-lg p-4">
-        <table class="table table-striped table-hover">
-            <thead style="background-color: #0C3C60; color: white;">
-                <tr>
-                    <th>Marca</th>
-                    <th>Modelo</th>
-                    <th>Nombre Cliente</th>
-                    <th>Motivo Ingreso</th>
-                    <th>Contraseña Equipo</th>
-                    <th>Descripción</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var equipo in Model)
-                {
+        <div class="card-body">
+            <table class="table table-striped table-hover" id="TablaEquipos">
+                <thead class="thead-dark">
                     <tr>
-                        <td>@equipo.Marca</td>
-                        <td>@equipo.Modelo</td>
-                        <td>@equipo.NombreCliente</td>
-                        <td>@equipo.MotivoIngreso</td>
-                        <td>@equipo.ContraseñaEquipo</td>
-                        <td>@equipo.Descripcion</td>
-                        <td>
-                            <a asp-action="Edit" asp-route-id="@equipo.EquipoId" class="btn btn-warning btn-sm">Editar</a>
-                            <a asp-action="Delete" asp-route-id="@equipo.EquipoId" class="btn btn-danger btn-sm">Eliminar</a>
-
-                        </td>
+                        <th>ID</th>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Nombre Cliente</th>
+                        <th>Motivo Ingreso</th>
+                        <th>Contraseña Equipo</th>
+                        <th>Descripción</th>
+                        <th>Acciones</th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var equipo in Model)
+                    {
+                        <tr>
+                            <td>@equipo.EquipoId</td>
+                            <td>@equipo.Marca</td>
+                            <td>@equipo.Modelo</td>
+                            <td>@equipo.NombreCliente</td>
+                            <td>@equipo.MotivoIngreso</td>
+                            <td>@equipo.ContraseñaEquipo</td>
+                            <td>@equipo.Descripcion</td>
+                            <td>
+                                <a href="@Url.Action("Edit", new { id = equipo.EquipoId })" class="btn btn-sm btn-warning">Editar</a>
+                                <a href="@Url.Action("Delete", new { id = equipo.EquipoId })" class="btn btn-sm btn-danger">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
