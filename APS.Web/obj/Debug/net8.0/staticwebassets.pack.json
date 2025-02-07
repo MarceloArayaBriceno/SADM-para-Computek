@@ -97,6 +97,10 @@
       "PackagePath": "staticwebassets\\js\\AdminSite.js"
     },
     {
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\js\\DataTables.js",
+      "PackagePath": "staticwebassets\\js\\DataTables.js"
+    },
+    {
       "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

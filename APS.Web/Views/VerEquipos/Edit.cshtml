@@ -1,108 +1,144 @@
 ﻿@model APS.Data.Models.Equipo
 
 @{
-    ViewData["Title"] = "Editar Equipo";
+    ViewData["Title"] = "Lista de Equipos";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
 <style>
     body {
-        background: linear-gradient(135deg, #83CCCA, #A4DFB2);
-        background-size: 400% 400%;
+        background: linear-gradient(to right, #83CCCA, #A4DFB2);
+        background-size: cover;
         height: 100%;
         margin: 0;
     }
 
     .card {
-        background: rgba(255, 255, 255, 0.95);
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background: rgba(255, 255, 255, 0.97);
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        padding: 20px;
     }
 
     h2 {
         color: #0C3C60;
         font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+
+    .form-group label {
+        font-weight: bold;
+        color: #0C3C60;
+    }
+
+    .form-control {
+        border: 2px solid #83CCCA;
+        border-radius: 6px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .form-control:focus {
+        border-color: #A4DFB2;
+        box-shadow: 0 0 8px rgba(164, 223, 178, 0.5);
     }
 
     .btn-success {
         background-color: #A4DFB2;
         border-color: #A4DFB2;
+        font-weight: bold;
     }
 
-        .btn-success:hover {
-            background-color: #83CCCA;
-            border-color: #83CCCA;
-        }
+    .btn-success:hover {
+        background-color: #83CCCA;
+        border-color: #83CCCA;
+    }
 
     .btn-danger {
         background-color: #FF7E7E;
         border-color: #FF7E7E;
+        font-weight: bold;
     }
 
-        .btn-danger:hover {
-            background-color: #E56767;
-            border-color: #E56767;
-        }
+    .btn-danger:hover {
+        background-color: #E56767;
+        border-color: #E56767;
+    }
 </style>
 
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-lg">
+                <h2>Editar Equipo</h2>
+                <form asp-action="Edit" method="post">
+                    <input type="hidden" asp-for="EquipoId" />
 
-<div class="container my-4">
-    <div class="card shadow-lg p-4">
-        <h2 class="text-center text-primary font-weight-bold">Editar Equipo</h2>
-        <form asp-action="Edit" method="post" class="mt-4">
-            <input type="hidden" asp-for="EquipoId" />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label asp-for="Marca">Marca</label>
+                                <input asp-for="Marca" class="form-control" />
+                                <span asp-validation-for="Marca" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label asp-for="Modelo">Modelo</label>
+                                <input asp-for="Modelo" class="form-control" />
+                                <span asp-validation-for="Modelo" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="form-group mb-3">
-                <label asp-for="Marca" class="font-weight-bold">Marca</label>
-                <input asp-for="Marca" class="form-control" />
-                <span asp-validation-for="Marca" class="text-danger"></span>
+                    <div class="form-group mb-3">
+                        <label asp-for="NombreCliente">Nombre del Cliente</label>
+                        <input asp-for="NombreCliente" class="form-control" />
+                        <span asp-validation-for="NombreCliente" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="MotivoIngreso">Motivo de Ingreso</label>
+                        <input asp-for="MotivoIngreso" class="form-control" />
+                        <span asp-validation-for="MotivoIngreso" class="text-danger"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label asp-for="GarantiaConLocal">Garantía con Local</label>
+                                <input asp-for="GarantiaConLocal" class="form-control" />
+                                <span asp-validation-for="GarantiaConLocal" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label asp-for="ContraseñaEquipo">Contraseña del Equipo</label>
+                                <input asp-for="ContraseñaEquipo" class="form-control" />
+                                <span asp-validation-for="ContraseñaEquipo" class="text-danger"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="Descripcion">Descripción</label>
+                        <textarea asp-for="Descripcion" class="form-control" rows="3"></textarea>
+                        <span asp-validation-for="Descripcion" class="text-danger"></span>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label asp-for="FechaIngreso">Fecha de Ingreso</label>
+                        <input asp-for="FechaIngreso" class="form-control" type="date" />
+                        <span asp-validation-for="FechaIngreso" class="text-danger"></span>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success px-4">Guardar</button>
+                        <a asp-action="Index" class="btn btn-danger px-4">Cancelar</a>
+                    </div>
+                </form>
             </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="Modelo" class="font-weight-bold">Modelo</label>
-                <input asp-for="Modelo" class="form-control" />
-                <span asp-validation-for="Modelo" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="NombreCliente" class="font-weight-bold">Nombre del Cliente</label>
-                <input asp-for="NombreCliente" class="form-control" />
-                <span asp-validation-for="NombreCliente" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="MotivoIngreso" class="font-weight-bold">Motivo de Ingreso</label>
-                <input asp-for="MotivoIngreso" class="form-control" />
-                <span asp-validation-for="MotivoIngreso" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="GarantiaConLocal" class="font-weight-bold">Garantía con Local</label>
-                <input asp-for="GarantiaConLocal" class="form-control" />
-                <span asp-validation-for="GarantiaConLocal" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="ContraseñaEquipo" class="font-weight-bold">Contraseña del Equipo</label>
-                <input asp-for="ContraseñaEquipo" class="form-control" />
-                <span asp-validation-for="ContraseñaEquipo" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="Descripcion" class="font-weight-bold">Descripción</label>
-                <input asp-for="Descripcion" class="form-control" />
-                <span asp-validation-for="Descripcion" class="text-danger"></span>
-            </div>
-
-            <div class="form-group mb-3">
-                <label asp-for="FechaIngreso" class="font-weight-bold">Fecha de Ingreso</label>
-                <input asp-for="FechaIngreso" class="form-control" type="date" />
-                <span asp-validation-for="FechaIngreso" class="text-danger"></span>
-            </div>
-
-            <div class="text-center">
-                <button type="submit" class="btn btn-success">Guardar</button>
-                <a asp-action="Index" class="btn btn-danger">Cancelar</a>
-            </div>
-        </form>
+        </div>
     </div>
 </div>

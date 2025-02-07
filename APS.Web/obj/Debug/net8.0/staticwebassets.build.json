@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Pqd+ORUqK468ECRy7H4JZcvF3wmDajKq/E+nxWsztxw=",
+  "Hash": "uIXQul6e1ZEjk2W5ShMqliEXhcPpGFFHxgJBizpg+Sw=",
   "Source": "APS.Web",
   "BasePath": "_content/APS.Web",
   "Mode": "Default",
@@ -490,6 +490,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\AdminSite.js"
+    },
+    {
+      "Identity": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\js\\DataTables.js",
+      "SourceId": "APS.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\",
+      "BasePath": "_content/APS.Web",
+      "RelativePath": "js/DataTables.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\DataTables.js"
     },
     {
       "Identity": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\js\\site.js",

@@ -56,5 +56,17 @@ namespace APS.Web.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public IActionResult EliminarCambio(int id)
+        {
+            var cambio = _context.HistorialEquipos.Find(id);
+            if (cambio != null)
+            {
+                _context.HistorialEquipos.Remove(cambio);
+                _context.SaveChanges();
+            }
+            return RedirectToAction("Index", new { equipoId = cambio.EquipoId });
+        }
+
     }
 }

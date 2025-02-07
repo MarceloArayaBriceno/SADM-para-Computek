@@ -1,3 +1,75 @@
-﻿<h2>Equipo Rechazado</h2>
-<p>@TempData["Message"]</p>
-<a href="@Url.Action("VerificarAprobaciones", "Equipos")">Volver a intentar</a>
+﻿@{
+    ViewData["Title"] = "Equipo Rechazado";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="icon">⚠️</div>
+    <h1>Equipo Rechazado</h1>
+    <p>El equipo no cumple con todos los requisitos.</p>
+    <a asp-controller="Equipos" asp-action="VerificarAprobaciones" class="button">Volver a Intentar</a>
+</div>
+
+<style>
+    /* Fondo con degradado estático */
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #001F3F, #002B47, #023E6A);
+        background-size: cover;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    /* Contenedor con bordes redondeados y sombra */
+    .container {
+        background-color: #02416e;
+        padding: 30px;
+        border-radius: 15px;
+        text-align: center;
+        width: 320px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Icono de advertencia */
+    .icon {
+        font-size: 50px;
+        color: #ffcc00;
+        margin-bottom: 10px;
+    }
+
+    /* Título con mejor tipografía */
+    h1 {
+        color: #a8ff78;
+        font-size: 22px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    /* Texto informativo */
+    p {
+        color: white;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    /* Botón con mejor diseño */
+    .button {
+        background-color: #a8ff78;
+        color: #002b47;
+        padding: 12px 18px;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 8px;
+        display: inline-block;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+    }
+
+        .button:hover {
+            background-color: #87e56b;
+        }
+</style>

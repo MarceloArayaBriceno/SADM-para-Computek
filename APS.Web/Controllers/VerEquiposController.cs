@@ -81,19 +81,8 @@ namespace APS.Web.Controllers
 
 
         // Acción para eliminar un equipo
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> Delete(int id)
-        {
-            var equipo = await _context.Equipos.FindAsync(id);
-            if (equipo == null)
-            {
-                return NotFound();
-            }
-            return View(equipo);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var equipo = await _context.Equipos.FindAsync(id);
             if (equipo != null)
@@ -103,5 +92,6 @@ namespace APS.Web.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
+
     }
 }
