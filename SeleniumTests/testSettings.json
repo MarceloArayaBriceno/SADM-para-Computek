@@ -1,0 +1,11 @@
+﻿{
+  "BaseUrl": "https://ejemplo.com",
+  "Browser": "Chrome",
+  "TimeoutSeconds": 30,
+  "Headless": false,
+  "DownloadPath": "C:\\Downloads\\TestFiles",
+  "ScreenshotPath": "C:\\TestResults\\Screenshots",
+  "DefaultUser": {
+    "Username": "testuser",
+    "Password": "testpass"
+  }
