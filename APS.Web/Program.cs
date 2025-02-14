@@ -75,7 +75,7 @@ builder.Services.AddHttpClient();
 // Configurar y añadir el servicio de sesión
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(1); // Tiempo de expiración de la sesión
+    options.IdleTimeout = TimeSpan.FromMinutes(1440); // Tiempo de expiración de la sesión
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
