@@ -30,11 +30,11 @@ namespace SeleniumTests.Pages
             return this;
         }
 
-        public DashboardPage ClickLogin()
+        /*public DashboardPage ClickLogin()
         {
             WaitAndClick(_loginButton);
             return new DashboardPage(Driver);
-        }
+        }*/
 
         public bool IsErrorMessageDisplayed()
         {
@@ -42,12 +42,12 @@ namespace SeleniumTests.Pages
         }
 
         // Fluent Interface Method
-        public DashboardPage LoginAs(string username, string password)
+        /*public DashboardPage LoginAs(string username, string password)
         {
             return EnterUsername(username)
                    .EnterPassword(password)
                    .ClickLogin();
-        }
+        }*/
 
 
 
