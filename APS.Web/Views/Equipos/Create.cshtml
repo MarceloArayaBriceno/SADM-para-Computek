@@ -5,75 +5,135 @@
 @model APS.Data.Models.Equipo
 
 <style>
-     .page-container {
-        background-image: url("/img/bg-create-equipo.webp") !important;
-        background-repeat: no-repeat;
+    /* Estilo del fondo */
+    .page-container {
+        background: linear-gradient(to right, #83CCCA, #A4DFB2);
         background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
 
-        min-height: 91vh;
-     }
+    /* Tarjeta principal */
+    .form-card {
+        background: rgba(12, 60, 96, 0.95);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 700px;
+        color: white;
+    }
+
+    /* Título */
+    .form-title {
+        text-align: center;
+        font-weight: bold;
+        color: #A4DFB2;
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+
+    /* Etiquetas de los campos */
+    .form-label {
+        font-weight: bold;
+        color: #F1EBE2;
+    }
+
+    /* Inputs personalizados */
+    .form-control {
+        border-radius: 8px;
+        border: 2px solid #A4DFB2;
+        transition: all 0.3s ease-in-out;
+    }
+
+        .form-control:focus {
+            border-color: #83CCCA;
+            box-shadow: 0 0 8px rgba(164, 223, 178, 0.5);
+        }
+
+    /* Checkbox estilizado */
+    .form-check-input {
+        background-color: #A4DFB2;
+        border: 2px solid white;
+    }
+
+    /* Botón principal */
+    .btn-primary {
+        background-color: #A4DFB2;
+        border: none;
+        color: #0C3C60;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+        .btn-primary:hover {
+            background-color: #83CCCA;
+            color: white;
+        }
 </style>
 
-<div class="d-flex justify-content-center align-items-center page-container">
-    <div id="form" class="card p-4" style="width: 100%; max-width: 80vw; background-color: #0C3C60; color: #FFF; border-radius: 15px;">
-        <h2 class="text-center mb-4" style="color: #AADFB2;">Crear Equipo</h2>
+<div class="page-container">
+    <div class="form-card">
+        <h2 class="form-title">Crear Equipo</h2>
 
         <form asp-action="Create" method="post">
             <div class="mb-3">
-                <label asp-for="Marca" class="form-label" style="color: #FFF;">Marca</label>
-                <input asp-for="Marca" class="form-control" style="border-radius: 10px;" />
+                <label asp-for="Marca" class="form-label">Marca</label>
+                <input asp-for="Marca" class="form-control" />
                 <span asp-validation-for="Marca" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="Modelo" class="form-label" style="color: #FFF;">Modelo</label>
-                <input asp-for="Modelo" class="form-control" style="border-radius: 10px;" />
+                <label asp-for="Modelo" class="form-label">Modelo</label>
+                <input asp-for="Modelo" class="form-control" />
                 <span asp-validation-for="Modelo" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="NombreCliente" class="form-label" style="color: #FFF;">Nombre del Cliente</label>
-                <input asp-for="NombreCliente" class="form-control" style="border-radius: 10px;" />
+                <label asp-for="NombreCliente" class="form-label">Nombre del Cliente</label>
+                <input asp-for="NombreCliente" class="form-control" />
                 <span asp-validation-for="NombreCliente" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="MotivoIngreso" class="form-label" style="color: #FFF;">Motivo de Ingreso</label>
-                <textarea asp-for="MotivoIngreso" class="form-control" style="border-radius: 10px;"></textarea>
+                <label asp-for="MotivoIngreso" class="form-label">Motivo de Ingreso</label>
+                <textarea asp-for="MotivoIngreso" class="form-control" rows="3"></textarea>
                 <span asp-validation-for="MotivoIngreso" class="text-danger"></span>
             </div>
 
             <div class="form-check mb-3">
                 <input asp-for="GarantiaConLocal" class="form-check-input" type="checkbox" />
-                <label asp-for="GarantiaConLocal" class="form-check-label" style="color: #FFF;">Garantía con Local</label>
+                <label asp-for="GarantiaConLocal" class="form-check-label">Garantía con Local</label>
                 <span asp-validation-for="GarantiaConLocal" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="ContraseñaEquipo" class="form-label" style="color: #FFF;">Contraseña del Equipo</label>
-                <input asp-for="ContraseñaEquipo" class="form-control" style="border-radius: 10px;" />
+                <label asp-for="ContraseñaEquipo" class="form-label">Contraseña del Equipo</label>
+                <input asp-for="ContraseñaEquipo" class="form-control" />
                 <span asp-validation-for="ContraseñaEquipo" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="Descripcion" class="form-label" style="color: #FFF;">Descripción</label>
-                <textarea asp-for="Descripcion" class="form-control" style="border-radius: 10px;"></textarea>
+                <label asp-for="Descripcion" class="form-label">Descripción</label>
+                <textarea asp-for="Descripcion" class="form-control" rows="3"></textarea>
                 <span asp-validation-for="Descripcion" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
-                <label asp-for="FechaIngreso" class="form-label" style="color: #FFF;">Fecha de Ingreso</label>
-                <input asp-for="FechaIngreso" class="form-control" style="border-radius: 10px;" />
+                <label asp-for="FechaIngreso" class="form-label">Fecha de Ingreso</label>
+                <input asp-for="FechaIngreso" class="form-control" type="date" />
                 <span asp-validation-for="FechaIngreso" class="text-danger"></span>
             </div>
 
-            <div class="text-center">
-                <button type="submit" class="btn" style="background-color: #AADFB2; color: #0C3C60; font-weight: bold; border-radius: 10px; padding: 10px 20px;">Guardar</button>
-            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
         </form>
-
-        <div class="text-center mt-3">
-            <a asp-action="Index" style="color: #83CCCA; text-decoration: none;">Volver a la lista</a>
-        </div>
     </div>
 </div>

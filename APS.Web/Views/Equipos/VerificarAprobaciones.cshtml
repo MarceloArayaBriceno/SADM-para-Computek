@@ -1,43 +1,125 @@
 ﻿@{
-    ViewData["Title"] = "Inicio - Computek";
+    ViewData["Title"] = "Verificar Aprobaciones";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 @model AprobacionesViewModel
 
-<div class="container mt-4">
-    <h2 class="mb-4">Verificar Criterios de Aprobación</h2>
+<!-- Formulario de Verificación -->
+<div class="page-container">
+    <div class="form-container">
+        <h2 class="form-title mb-4">Verificar Criterios de Aprobación</h2>
 
-    <form asp-action="VerificarAprobaciones" method="post">
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" asp-for="EstadoFisico" />
-                <label class="form-check-label" for="EstadoFisico">El equipo no presenta daños visibles graves.</label>
+        <form asp-action="VerificarAprobaciones" method="post">
+            <div class="form-group mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" asp-for="EstadoFisico" id="EstadoFisico" />
+                    <label class="form-check-label" for="EstadoFisico">El equipo no presenta daños visibles graves.</label>
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" asp-for="MarcaAprobada" />
-                <label class="form-check-label" for="MarcaAprobada">La marca del equipo está en la lista de marcas aprobadas.</label>
+            <div class="form-group mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" asp-for="MarcaAprobada" id="MarcaAprobada" />
+                    <label class="form-check-label" for="MarcaAprobada">La marca está aprobada.</label>
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" asp-for="SinHumedadCalor" />
-                <label class="form-check-label" for="SinHumedadCalor">El equipo no presenta rastros de humedad o exposición a calor excesivo.</label>
+            <div class="form-group mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" asp-for="SinHumedadCalor" id="SinHumedadCalor" />
+                    <label class="form-check-label" for="SinHumedadCalor">Sin rastros de humedad o calor.</label>
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" asp-for="ProcesadorCompatible" />
-                <label class="form-check-label" for="ProcesadorCompatible">El procesador es de una generación compatible.</label>
+            <div class="form-group mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" asp-for="ProcesadorCompatible" id="ProcesadorCompatible" />
+                    <label class="form-check-label" for="ProcesadorCompatible">Procesador compatible.</label>
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" asp-for="NoObsoleto" />
-                <label class="form-check-label" for="NoObsoleto">El equipo no ha sido declarado obsoleto por el fabricante.</label>
+            <div class="form-group mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" asp-for="NoObsoleto" id="NoObsoleto" />
+                    <label class="form-check-label" for="NoObsoleto">El equipo no es obsoleto.</label>
+                </div>
             </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Validar Aprobaciones</button>
-    </form>
+            <button type="submit" class="btn btn-submit">Validar Aprobaciones</button>
+        </form>
+    </div>
 </div>
+
+<!-- MODAL DE EQUIPO RECHAZADO -->
+<div class="modal fade" id="modalRechazo" tabindex="-1" aria-labelledby="modalRechazoLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-danger text-white">
+                <h5 class="modal-title" id="modalRechazoLabel">Equipo Rechazado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>@TempData["Message"]</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script para activar el modal si hay un mensaje -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var mensaje = "@TempData["Message"]";
+        if (mensaje && mensaje.trim() !== "") {
+            var modal = new bootstrap.Modal(document.getElementById('modalRechazo'));
+            modal.show();
+        }
+    });
+</script>
+
+<style>
+    .page-container {
+        background: linear-gradient(90deg, #4456E4, #DF818F, #4456E4);
+        background-size: 400% 400%;
+        min-height: 91vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .form-container {
+        background-color: #f8f9fa;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        max-width: 600px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-title {
+        color: #0C3C60;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .form-check-label {
+        color: #555;
+        font-size: 16px;
+    }
+
+    .btn-submit {
+        display: block;
+        width: 100%;
+        background-color: #0C3C60;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: 10px;
+        margin-top: 15px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-submit:hover {
+            background-color: #094050;
+        }
+</style>

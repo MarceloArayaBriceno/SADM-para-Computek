@@ -6,35 +6,46 @@
 
 <div class="container mt-5">
     <h2 class="text-center mb-4">Lista de Productos</h2>
-    <a href="@Url.Action("Create")" class="btn btn-primary mb-3">Agregar Nuevo Producto</a>
+    <a href="@Url.Action("Create")" class="btn btn-primary mb-3" id="">Agregar Nuevo Producto</a>
+    
+    <a class="btn-IA-Tecnico" asp-controller="TecnicoIA" asp-action="Index">
+        <i class="fas fa-robot"></i>
+    </a>
 
-    <table class="table table-striped table-hover">
-        <thead class="thead-dark">
-            <tr>
-                <th>Nombre</th>
-                <th>Descripción</th>
-                <th>Precio</th>
-                <th>Stock</th>
-                <th>Fecha de Registro</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var producto in Model)
-            {
-                <tr>
-                    <td>@producto.Nombre</td>
-                    <td>@producto.Descripcion</td>
-                    <td>@producto.Precio.ToString("C")</td>
-                    <td>@producto.Stock</td>
-                    <td>@producto.FechaRegistro.ToShortDateString()</td>
-                    <td>
-                        <a href="@Url.Action("Details", new { id = producto.IdProducto })" class="btn btn-info btn-sm">Detalles</a>
-                        <a href="@Url.Action("Edit", new { id = producto.IdProducto })" class="btn btn-warning btn-sm">Editar</a>
-                        <a href="@Url.Action("Delete", new { id = producto.IdProducto })" class="btn btn-danger btn-sm">Eliminar</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="card mb-4">
+        <div class="card-header">
+            <i class="fas fa-table me-1"></i>
+            Tabla de Productos
+        </div>
+        <div class="card-body">
+            <table class="table table-striped table-hover" id="TablaProductos">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Stock</th>
+                        <th>Fecha de Registro</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var producto in Model)
+                    {
+                        <tr>
+                            <td>@producto.Nombre</td>
+                            <td>@producto.Descripcion</td>
+                            <td>@producto.Precio.ToString("C")</td>
+                            <td>@producto.Stock</td>
+                            <td>@producto.FechaRegistro.ToString("dd/MM/yyyy")</td>
+                            <td>
+                                <a href="@Url.Action("Edit", new { id = producto.IdProducto })" class="btn btn-sm btn-warning">Editar</a>
+                                <a href="@Url.Action("Delete", new { id = producto.IdProducto })" class="btn btn-sm btn-danger">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>

@@ -74,20 +74,18 @@ namespace APS.Web.Controllers
                 if (model.EstadoFisico && model.MarcaAprobada && model.SinHumedadCalor &&
                     model.ProcesadorCompatible && model.NoObsoleto)
                 {
-                    // Redirigir al formulario de registro del equipo si todo es válido
                     return RedirectToAction("Create", "Equipos");
                 }
                 else
                 {
-                    // Mostrar mensaje de rechazo
+                    // Guardar mensaje de rechazo en TempData para mostrar en la vista
                     TempData["Message"] = "El equipo no cumple con todos los requisitos.";
-                    return RedirectToAction("EquipoRechazado");
                 }
             }
 
-            // Volver a mostrar el formulario si el modelo no es válido
             return View(model);
         }
+
 
         // Método para mostrar la vista de equipo rechazado (opcional)
         public IActionResult EquipoRechazado()

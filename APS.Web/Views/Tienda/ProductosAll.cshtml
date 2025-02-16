@@ -4,13 +4,52 @@
     ViewData["Title"] = "Inicio Tienda";
 
 }
+<style>
+    .card {
+        height: 100%; /* Asegura que las tarjetas tengan la misma altura */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Alinea los elementos verticalmente */
+        text-align: center;
+    }
+
+    .card-img-top {
+        object-fit: contain; /* Ajusta la imagen sin distorsión */
+        height: 200px; /* Altura fija para imágenes */
+        width: 100%; /* Ajusta el ancho */
+        padding: 10px; /* Espacio interno para las imágenes */
+    }
+
+    .card .accordion-body {
+        flex-grow: 1; /* Permite que el contenido crezca para ajustar las tarjetas */
+        padding: 20px; /* Espacio interno consistente */
+    }
+
+    h5.fw-bolder {
+        min-height: 50px; /* Asegura un espacio fijo para el título */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        margin: 0 0 10px; /* Consistencia en los márgenes */
+    }
+
+        p:last-child {
+            font-weight: bold; /* Resalta el precio */
+            color: #FFFFFF; /* Color distintivo */
+        }
+
+</style>
 <!-- Header-->
 <body>
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
             <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Computek</h1>
-                <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                <h1 class="display-4 fw-bolder"> Productos Computek </h1>
+                <p class="lead fw-normal text-white-50 mb-0">Explora lo último en tecnología con productos diseñados para el rendimiento
+                    y calidad.</p>
             </div>
         </div>
     </header>
@@ -23,27 +62,22 @@
                 {
                     <div class="col mb-5">
                         <div class="card h-100">
-                            <img class="card card-img-top" src="@producto.RutaImagen" />
+                            <!-- Imagen del producto -->
+                            <img class="card-img-top" src="@producto.RutaImagen" alt="@producto.Nombre" />
+
+                            <!-- Información del producto -->
                             <div class="card accordion-body p-4">
                                 <div class="text-center">
+                                    <!-- Título del producto -->
                                     <h5 class="fw-bolder">@producto.Nombre</h5>
+                                    <!-- Descripción -->
                                     <p>@producto.Descripcion</p>
-                                    <p>@producto.Precio</p>
+                                    <!-- Precio -->
+                                    <p>₡ @producto.Precio</p>
                                 </div>
                             </div>
-
-                            <div class=" card-footer p-4 pt-0 border-top-0 bg-transparent">
-
-                                <div class="text-center">
-                                    <a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a>
-                                </div>
-
-                            </div>
-
                         </div>
-
                     </div>
-
                 }
             </div>
         </div>

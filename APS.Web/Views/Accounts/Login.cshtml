@@ -1,62 +1,127 @@
-﻿@* @model APS.Web.Models.LoginModel
+﻿@model APS.Web.Models.LoginModel
 
 @{
     ViewData["Title"] = "Login";
+    Layout = null;
 }
+<style>
 
-<h2>@ViewData["Title"]</h2>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #0A192F;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Arial', sans-serif;
+    }
 
-<form asp-action="Login" method="post">
-    <div class="form-group">
-        <label asp-for="Email" class="control-label"></label>
-        <input asp-for="Email" class="form-control" />
+    .login-card {
+        background-color: #1E2A38; /* Fondo de la tarjeta más oscuro para mejor contraste */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+        border-radius: 15px;
+        max-width: 450px;
+        width: 90%;
+        padding: 30px;
+        text-align: center;
+    }
+
+        .login-card h3 {
+            margin-bottom: 15px;
+            color: #00AEEF; /* Celeste de la paleta de colores */
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .login-card h4 {
+            color: #FFFFFF;
+        }
+
+        .login-card .form-control {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: 1px solid #00AEEF;
+            padding: 15px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #1E2A38;
+            color: white;
+        }
+
+        .login-card .btn-primary {
+            background-color: #00AEEF;
+            border-color: #00AEEF;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 18px;
+            width: 100%;
+            padding: 12px;
+            color: #ffffff;
+            transition: background-color 0.3s;
+        }
+
+            .login-card .btn-primary:hover {
+                background-color: #008ECF;
+                border-color: #008ECF;
+            }
+
+        .login-card .forgot-password a {
+            color: #00AEEF;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+            .login-card .forgot-password a:hover {
+                text-decoration: underline;
+                color: #F8F9FA;
+            }
+
+    /* Botón de volver */
+    .btn-secondary {
+        background-color: #FF7E7E;
+        border-color: #FF7E7E;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        width: auto;
+        padding: 10px 20px;
+        color: #ffffff;
+        transition: background-color 0.3s;
+        margin-top: 15px;
+        display: inline-block;
+    }
+
+        .btn-secondary:hover {
+            background-color: #D95E5E;
+            border-color: #D95E5E;
+        }
+
+    /* Estilos para los mensajes de error */
+    .text-danger {
+        color: #FF7E7E !important; /* Rojo para resaltar errores */
+        font-weight: bold;
+    }
+</style>
+
+<div class="login-card">
+    <h3>Computek</h3>
+    <form asp-action="Login" method="post">
+        <h4 class="mb-4">@ViewData["Title"]</h4>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <input asp-for="Email" class="form-control" type="email" placeholder="Correo electrónico" />
         <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Password" class="control-label"></label>
-        <input asp-for="Password" class="form-control" />
+        <input asp-for="Password" class="form-control" type="password" placeholder="Contraseña" />
         <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <button type="submit" class="btn btn-primary">Login</button>
-    </div>
-</form> *@
 
-@model APS.Web.Models.LoginModel
+        <button type="submit" class="btn btn-primary mt-3">Iniciar sesión</button>
 
-@{
-    ViewData["Title"] = "Login";
-}
-
-
-@Html.ValidationSummary(true, "", new { @class = "text-danger" })
-
-
-<div class="row justify-content-center">
-    <div class="col-lg-5">
-        <div class="card shadow-lg border-0 rounded-lg mt-5">
-            <div class="card-header"><h3 class="text-center font-weight-light my-4">@ViewData["Title"]</h3></div>
-            <div class="card-body">
-                <form asp-action="Login" method="post">
-                    <div class="form-group mb-3">
-                        <label asp-for="Email" class="control-label"></label>
-                        <input asp-for="Email" class="form-control" type="email" placeholder="Escribe tu correo electrónico" />
-                        <span asp-validation-for="Email" class="text-danger"></span>
-                    </div>
-                    <div class="form-group mb-3">
-                        <label asp-for="Password" class="control-label"></label>
-                        <input asp-for="Password" class="form-control" type="password" placeholder="Escribe tu contraseña" />
-                        <span asp-validation-for="Password" class="text-danger"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </div>
-                </form>
-            </div>
-            <div class="card-footer text-center py-3">
-                <div class="small"><a href="register.html">Need an account? Sign up!</a></div>
-            </div>
+        <div class="forgot-password mt-3">
+            <!--  <a asp-action="ForgotPassword">¿Olvidaste tu contraseña?</a>-->
         </div>
-    </div>
+
+        <!-- Botón de volver -->
+        <a asp-controller="Tienda" asp-action="Index" class="btn btn-secondary mt-3">Volver</a>
+    </form>
 </div>

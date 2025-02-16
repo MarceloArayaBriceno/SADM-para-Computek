@@ -2390,3 +2390,9 @@ D:\Computek1\SADM-para-Computek\APS.Web\obj\Debug\net8.0\refint\APS.Web.dll
 D:\Computek1\SADM-para-Computek\APS.Web\obj\Debug\net8.0\APS.Web.pdb
 D:\Computek1\SADM-para-Computek\APS.Web\obj\Debug\net8.0\APS.Web.genruntimeconfig.cache
 D:\Computek1\SADM-para-Computek\APS.Web\obj\Debug\net8.0\ref\APS.Web.dll
+D:\github\SADM-para-Computek\APS.Web\bin\Debug\net8.0\Azure.AI.FormRecognizer.dll
+D:\github\SADM-para-Computek\APS.Web\bin\Debug\net8.0\Azure.AI.OpenAI.dll
+D:\github\SADM-para-Computek\APS.Web\bin\Debug\net8.0\OpenAI.dll
+D:\github\SADM-para-Computek\APS.Web\bin\Debug\net8.0\Rotativa.AspNetCore.dll
+D:\github\SADM-para-Computek\APS.Web\bin\Debug\net8.0\System.ClientModel.dll
+D:\github\SADM-para-Computek\APS.Web\obj\Debug\net8.0\APS.Web.MvcApplicationPartsAssemblyInfo.cs

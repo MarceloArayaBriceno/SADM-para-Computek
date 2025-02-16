@@ -68,5 +68,25 @@ namespace APS.Web.Controllers
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+
+        [HttpGet]
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+
+        // Acción para procesar el envío del formulario de recuperación
+        [HttpPost]
+        public IActionResult ForgotPassword(string email)
+        {
+            // Lógica para enviar un correo de recuperación
+            if (!string.IsNullOrEmpty(email))
+            {
+                // Aquí iría la lógica para generar el token y enviar el correo
+                TempData["Message"] = "Si el correo está registrado, recibirás un enlace para restablecer tu contraseña.";
+            }
+            return View();
+        }
+
     }
 }

@@ -1,299 +1,335 @@
 {
   "Files": [
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\APS.Web.bundle.scp.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\APS.Web.bundle.scp.css",
       "PackagePath": "staticwebassets\\APS.Web.bundle.scp.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\StyleAdmin.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\StyleAdmin.css",
       "PackagePath": "staticwebassets\\css\\StyleAdmin.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\StyleClienteLayout.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\StyleClienteLayout.css",
       "PackagePath": "staticwebassets\\css\\StyleClienteLayout.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\StyleLandigPage.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\StyleLandigPage.css",
       "PackagePath": "staticwebassets\\css\\StyleLandigPage.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\master.png",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\master.png",
       "PackagePath": "staticwebassets\\css\\master.png"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\site.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\visa.png",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\css\\visa.png",
       "PackagePath": "staticwebassets\\css\\visa.png"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\favicon.ico",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\Hardware.jpg",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\Hardware.jpg",
       "PackagePath": "staticwebassets\\img\\Hardware.jpg"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\MotherBoardTUFF.jpg",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\MotherBoardTUFF.jpg",
       "PackagePath": "staticwebassets\\img\\MotherBoardTUFF.jpg"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\Teclado.jpg",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\Teclado.jpg",
       "PackagePath": "staticwebassets\\img\\Teclado.jpg"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\bg-masthead.jpg",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\bg-create-equipo.webp",
+      "PackagePath": "staticwebassets\\img\\bg-create-equipo.webp"
+    },
+    {
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\bg-masthead.jpg",
       "PackagePath": "staticwebassets\\img\\bg-masthead.jpg"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\testimonials-1.jpg",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\home1.jpg",
+      "PackagePath": "staticwebassets\\img\\home1.jpg"
+    },
+    {
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\home2.jpg",
+      "PackagePath": "staticwebassets\\img\\home2.jpg"
+    },
+    {
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\home3.jpg",
+      "PackagePath": "staticwebassets\\img\\home3.jpg"
+    },
+    {
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\home4.jpg",
+      "PackagePath": "staticwebassets\\img\\home4.jpg"
+    },
+    {
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\home5.jpg",
+      "PackagePath": "staticwebassets\\img\\home5.jpg"
+    },
+    {
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\home6.jpg",
+      "PackagePath": "staticwebassets\\img\\home6.jpg"
+    },
+    {
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\home7.jpg",
+      "PackagePath": "staticwebassets\\img\\home7.jpg"
+    },
+    {
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\testimonials-1.jpg",
       "PackagePath": "staticwebassets\\img\\testimonials-1.jpg"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\testimonials-2.jpg",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\testimonials-2.jpg",
       "PackagePath": "staticwebassets\\img\\testimonials-2.jpg"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\testimonials-3.jpg",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\img\\testimonials-3.jpg",
       "PackagePath": "staticwebassets\\img\\testimonials-3.jpg"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\js\\AdminSite.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\js\\AdminSite.js",
       "PackagePath": "staticwebassets\\js\\AdminSite.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\js\\site.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\js\\DataTables.js",
+      "PackagePath": "staticwebassets\\js\\DataTables.js"
+    },
+    {
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\Computek1\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\github\\SADM-para-Computek\\APS.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

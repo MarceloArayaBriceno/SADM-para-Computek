@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Computek1\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {}
+    "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {}
   },
   "projects": {
-    "D:\\Computek1\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
+    "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Computek1\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
+        "projectUniqueName": "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
         "projectName": "APS.Data",
-        "projectPath": "D:\\Computek1\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
-        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-        "outputPath": "D:\\Computek1\\SADM-para-Computek\\APS.Data\\obj\\",
+        "projectPath": "D:\\github\\SADM-para-Computek\\APS.Data\\APS.Data.csproj",
+        "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
+        "outputPath": "D:\\github\\SADM-para-Computek\\APS.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,6 +46,18 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Azure.AI.FormRecognizer": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Azure.AI.OpenAI": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Azure.Core": {
+              "target": "Package",
+              "version": "[1.44.1, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.8, )"
@@ -63,6 +71,18 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.10, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Rotativa.AspNetCore": {
+              "target": "Package",
+              "version": "[1.4.0, )"
+            },
+            "System.Globalization": {
+              "target": "Package",
+              "version": "[4.3.0, )"
             }
           },
           "imports": [
@@ -81,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
