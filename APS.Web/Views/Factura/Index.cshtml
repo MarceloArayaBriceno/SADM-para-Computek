@@ -41,7 +41,7 @@
                         <tr>
                             <td>@factura.NombreCliente</td>
                             <td>@factura.DireccionCliente</td>
-                            <td>@factura.Fecha.ToString("dd/MM/yyyy")</td>
+                            <td data-order="@factura.Fecha.Ticks">@factura.Fecha.ToString("dd/MM/yyyy")</td>
                             <td>₡@factura.Total.ToString("N2")</td>
                             <td>₡@totalConIVA.ToString("N2")</td>
                             <td>
