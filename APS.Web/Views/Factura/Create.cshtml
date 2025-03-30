@@ -6,22 +6,42 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
+<style>
+
+    h2 {
+        color: white !important;
+    }
+
+    #crear-factura-form {
+        color: white !important;
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+    }
+
+    input {
+        color: black;
+    }
+
+</style>
+
 <div class="container p-4">
 
 <h2>Crear Factura</h2>
 
-<form asp-action="Create" method="post">
+<form asp-action="Create" method="post" id="crear-factura-form">
     <div class="form-group">
-        <label asp-for="NombreCliente"></label>
+        <label asp-for="NombreCliente">Nombre del cliente:</label>
         <input asp-for="NombreCliente" class="form-control" />
         <span asp-validation-for="NombreCliente" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="DireccionCliente"></label>
+        <label asp-for="DireccionCliente">Direccion del cliente:</label>
         <input asp-for="DireccionCliente" class="form-control" />
     </div>
     <div class="form-group">
-        <label asp-for="Fecha"></label>
+        <label asp-for="Fecha">Fecha:</label>
         <input asp-for="Fecha" class="form-control" type="date" value="@DateTime.Now.ToString("yyyy-MM-dd")" />
         <span asp-validation-for="Fecha" class="text-danger"></span>
     </div>
@@ -32,17 +52,17 @@
         {
             <div class="detalles">
                 <div class="form-group">
-                    <label asp-for="DetallesFactura[i].Descripcion"></label>
+                    <label asp-for="DetallesFactura[i].Descripcion">Descripción</label>
                     <input asp-for="DetallesFactura[i].Descripcion" class="form-control" />
                     <span asp-validation-for="DetallesFactura[i].Descripcion" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="DetallesFactura[i].Cantidad"></label>
+                    <label asp-for="DetallesFactura[i].Cantidad">Cantidad</label>
                     <input asp-for="DetallesFactura[i].Cantidad" class="form-control" type="number" />
                     <span asp-validation-for="DetallesFactura[i].Cantidad" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <label asp-for="DetallesFactura[i].PrecioUnitario"></label>
+                    <label asp-for="DetallesFactura[i].PrecioUnitario">Precio Unitario</label>
                     <input asp-for="DetallesFactura[i].PrecioUnitario" class="form-control" type="number" step="0.01" />
                     <span asp-validation-for="DetallesFactura[i].PrecioUnitario" class="text-danger"></span>
                 </div>
