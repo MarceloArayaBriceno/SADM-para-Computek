@@ -1,8 +1,9 @@
-﻿using APS.Data.Models;
+using APS.Data.Models;
 using APS.Web.Filters;
 using APS.Web.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Versioning;
 using System.Globalization;
 using System.Text;
 
@@ -40,7 +41,7 @@ namespace APS.Web.Controllers
         [HttpGet, ActionName("Detalle")]
         public async Task<IActionResult> Detalle(int? id)
         {
-            var factura = await _context.Facturas.Include(f => f.DetallesFactura).FirstAsync();
+            var factura = await _context.Facturas.FindAsync(id);
             return View(factura);
         }
 
