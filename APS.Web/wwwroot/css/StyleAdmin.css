@@ -97,9 +97,9 @@ body {
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
-    color: #0A192F;
+    color: #OC3C60 !important;
     text-align: var(--bs-body-text-align);
-    background-color: #0a192f ;
+    background-color: #F1EBE2 ;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -2052,7 +2052,7 @@ progress {
 
 .table-striped > tbody > tr:nth-of-type(odd) > * {
     --bs-table-accent-bg: var(--bs-table-striped-bg);
-    color: var(--bs-table-striped-color);
+    color: #0c3c60;
 }
 
 .table-striped-columns > :not(caption) > tr > :nth-child(even) {
@@ -3228,15 +3228,15 @@ textarea.form-control-lg {
 
 .btn-primary {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #0d6efd;
-    --bs-btn-border-color: #0d6efd;
+    --bs-btn-bg: #83ccca;
+    --bs-btn-border-color: #83ccca;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #0b5ed7;
-    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-hover-bg: #83ccca;
+    --bs-btn-hover-border-color: #83ccca;
     --bs-btn-focus-shadow-rgb: 49, 132, 253;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #0a58ca;
-    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-bg: #83ccca;
+    --bs-btn-active-border-color: #83ccca;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #0d6efd;
@@ -4751,8 +4751,8 @@ textarea.form-control-lg {
 .card-header {
     padding: var(--bs-card-cap-padding-y) var(--bs-card-cap-padding-x);
     margin-bottom: 0;
-    color: var(--bs-card-cap-color);
-    background-color: var(--bs-card-cap-bg);
+    color: #f1ebe2;
+    background-color: #0c3c60;
     border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
 }
 
@@ -8895,7 +8895,7 @@ textarea.form-control-lg {
 
 .text-muted {
     --bs-text-opacity: 1;
-    color: #6c757d !important;
+    color: #f1ebe2 !important;
 }
 
 .text-black-50 {
@@ -8961,12 +8961,12 @@ textarea.form-control-lg {
 
 .bg-light {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+    background-color: #0c3c60 !important;
 }
 
 .bg-dark {
     --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+    background-color: #0c3c60 !important;
 }
 
 .bg-black {
@@ -12629,16 +12629,16 @@ body {
     }
 
 .sb-sidenav-dark {
-    background-color: #212529;
+    background-color: #0c3c60;
     color: rgba(255, 255, 255, 0.5);
 }
 
     .sb-sidenav-dark .sb-sidenav-menu .sb-sidenav-menu-heading {
-        color: rgba(255, 255, 255, 0.25);
+        color: #F1EBE2;
     }
 
     .sb-sidenav-dark .sb-sidenav-menu .nav-link {
-        color: rgba(255, 255, 255, 0.5);
+        color: #F1EBE2;
     }
 
         .sb-sidenav-dark .sb-sidenav-menu .nav-link .sb-nav-link-icon {
@@ -12899,7 +12899,7 @@ body {
     line-height: 55px;
     bottom: 30px;
     right: 30px;
-    background: #FF6A00;
+    background: #A4DFB2;
     color: #fff;
     border-radius: 50px;
     text-align: center;
@@ -12909,6 +12909,7 @@ body {
 }
     .btn-IA-Tecnico:hover {
         text-decoration: none;
-        color: #FF6A00;
+        color: #A4DFB2;
         background: #fff;
     }
+
