@@ -17,7 +17,7 @@ namespace APS.Web.Controllers
             _context = context;
         }
 
-        // Acción para listar los equipos con búsqueda
+        // Acción para listar equipos (Index)
         public async Task<IActionResult> Index(string searchId, string searchCliente)
         {
             var equipos = _context.Equipos.AsQueryable();
@@ -35,7 +35,7 @@ namespace APS.Web.Controllers
             return View(await equipos.ToListAsync());
         }
 
-        // Acción para editar un equipo
+        // Acción para editar equipo
         [HttpGet]
         public async Task<IActionResult> Edit(int id)
         {
@@ -79,8 +79,7 @@ namespace APS.Web.Controllers
             return View(equipo);
         }
 
-
-        // Acción para eliminar un equipo
+        // Acción para eliminar equipo
         [HttpPost]
         public async Task<IActionResult> Delete(int id)
         {
@@ -93,5 +92,17 @@ namespace APS.Web.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        // Acción para ver el reporte (antes llamado Print)
+        [HttpGet]
+        public async Task<IActionResult> Print(int id)
+        {
+            var equipo = await _context.Equipos.FindAsync(id);
+            if (equipo == null)
+            {
+                return NotFound();
+            }
+            // Se utiliza la vista Print.cshtml para mostrar el reporte
+            return View("~/Views/VerEquipos/Print.cshtml", equipo);
+        }
     }
 }

@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\VerEquipos\Print.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Azure.AI.FormRecognizer" Version="4.1.0" />
     <PackageReference Include="Azure.AI.OpenAI" Version="2.1.0" />
     <PackageReference Include="Azure.Core" Version="1.44.1" />
@@ -23,5 +27,17 @@
   <ItemGroup>
     <ProjectReference Include="..\APS.Data\APS.Data.csproj" />
     <ProjectReference Include="..\APS.Security\APS.Security.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\VerEquipos\Print.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\VerEquipos\Print.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\VerEquipos\Print.cshtml" />
   </ItemGroup>
 </Project>

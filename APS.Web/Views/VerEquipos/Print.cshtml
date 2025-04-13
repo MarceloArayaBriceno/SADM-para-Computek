@@ -1,0 +1,64 @@
+﻿@model APS.Data.Models.Equipo
+
+@{
+    Layout = null; // Vista sin layout para que el reporte se muestre de forma limpia
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Reporte de Equipo - @Model.EquipoId</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .reporte-container {
+            max-width: 600px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .reporte-container p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+        .btn-imprimir {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 20px;
+            background: #0C3C60;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* Ocultar el botón al imprimir */
+        @media print {
+            .btn-imprimir {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Reporte del Equipo</h1>
+    <div class="reporte-container">
+        <p><strong>ID:</strong> @Model.EquipoId</p>
+        <p><strong>Marca:</strong> @Model.Marca</p>
+        <p><strong>Modelo:</strong> @Model.Modelo</p>
+        <p><strong>Nombre Cliente:</strong> @Model.NombreCliente</p>
+        <p><strong>Motivo de Ingreso:</strong> @Model.MotivoIngreso</p>
+        <p><strong>Contraseña del Equipo:</strong> @Model.ContraseñaEquipo</p>
+        <p><strong>Descripción:</strong> @Model.Descripcion</p>
+        <p><strong>Fecha de Ingreso:</strong> @Model.FechaIngreso?.ToShortDateString()</p>
+    </div>
+    <!-- Botón que ejecuta window.print() (esto abre la ventana de impresión, similar a presionar Ctrl+P) -->
+    <button class="btn-imprimir" onclick="window.print()">Imprimir Reporte</button>
+</body>
+</html>

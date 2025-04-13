@@ -1,71 +1,9 @@
 ﻿@model APS.Data.Models.Equipo
 
 @{
-    ViewData["Title"] = "Lista de Equipos";
+    ViewData["Title"] = "Editar Equipo";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-
-<style>
-    body {
-        background: linear-gradient(to right, #83CCCA, #A4DFB2);
-        background-size: cover;
-        height: 100%;
-        margin: 0;
-    }
-
-    .card {
-        background: rgba(255, 255, 255, 0.97);
-        border-radius: 12px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-        padding: 20px;
-    }
-
-    h2 {
-        color: #0C3C60;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 26px;
-    }
-
-    .form-group label {
-        font-weight: bold;
-        color: #0C3C60;
-    }
-
-    .form-control {
-        border: 2px solid #83CCCA;
-        border-radius: 6px;
-        transition: all 0.3s ease-in-out;
-    }
-
-    .form-control:focus {
-        border-color: #A4DFB2;
-        box-shadow: 0 0 8px rgba(164, 223, 178, 0.5);
-    }
-
-    .btn-success {
-        background-color: #A4DFB2;
-        border-color: #A4DFB2;
-        font-weight: bold;
-    }
-
-    .btn-success:hover {
-        background-color: #83CCCA;
-        border-color: #83CCCA;
-    }
-
-    .btn-danger {
-        background-color: #FF7E7E;
-        border-color: #FF7E7E;
-        font-weight: bold;
-    }
-
-    .btn-danger:hover {
-        background-color: #E56767;
-        border-color: #E56767;
-    }
-</style>
 
 <div class="container mt-5">
     <div class="row justify-content-center">
@@ -108,7 +46,11 @@
                         <div class="col-md-6">
                             <div class="form-group mb-3">
                                 <label asp-for="GarantiaConLocal">Garantía con Local</label>
-                                <input asp-for="GarantiaConLocal" class="form-control" />
+                                <!-- Si esta propiedad es booleana lo ideal es usar un checkbox -->
+                                <div class="form-check">
+                                    <input asp-for="GarantiaConLocal" class="form-check-input" type="checkbox" />
+                                    <label class="form-check-label" asp-for="GarantiaConLocal"></label>
+                                </div>
                                 <span asp-validation-for="GarantiaConLocal" class="text-danger"></span>
                             </div>
                         </div>
@@ -123,9 +65,12 @@
 
                     <div class="form-group mb-3">
                         <label asp-for="Descripcion">Descripción</label>
-                        <textarea asp-for="Descripcion" class="form-control" rows="3"></textarea>
+                        <textarea asp-for="Descripcion" class="form-control"
+                                  style="height: 80px; max-width: 700px;"
+                                  rows="2"></textarea>
                         <span asp-validation-for="Descripcion" class="text-danger"></span>
                     </div>
+
 
                     <div class="form-group mb-3">
                         <label asp-for="FechaIngreso">Fecha de Ingreso</label>
@@ -136,6 +81,8 @@
                     <div class="text-center">
                         <button type="submit" class="btn btn-success px-4">Guardar</button>
                         <a asp-action="Index" class="btn btn-danger px-4">Cancelar</a>
+                        <!-- Botón para ejecutar window.print() y abrir la ventana de impresión -->
+                        <button type="button" class="btn btn-primary px-4" onclick="window.print()">Imprimir Reporte</button>
                     </div>
                 </form>
             </div>
